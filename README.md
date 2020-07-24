@@ -1,13 +1,26 @@
 # Social-Schedular
-A project to automatically send invite to all of your social media like LinkedIn, Facebook, email, WhatsApp, Instagram as soon as he finishes filling the form. We can also send deadlines, important meeting announcement. Now no more delays and late candidates on interviews.
+Who's Not on Social Media everybody is
+
+<p align="center"><img src="https://media.giphy.com/media/l2SpRK14D6cvy6Uxi/giphy.gif" width=45%></p>
+
+A project to automatically send invite to all of your social media like LinkedIn, Facebook, email, WhatsApp, Instagram as soon as he finishes filling the form. 
+<p align="center"><img src="https://media.giphy.com/media/YqcW1kMnm3m9YHAUHc/giphy.gif" width=45%></p>
+
+We can also send deadlines, important meeting announcement. Now no more delays and late candidates on interviews.
+
+<p align="center"><img src="https://media.giphy.com/media/huyZxIJvtqVeRp7QcS/giphy.gif" width=45%></p>
 
 ## Technology used or will be used?
-	HTML5 CSS ReactJS Selenium
+- HTML5 
+- CSS 
+- ReactJS 
+- Selenium
+- API for Various Social Media
 <h2 align= "center"><b> Programs: </b></h2>
 
-<a href = "https://scodein.tech/"><h3 align= "center"><b> Student Code IN </b></h3></a> 
+<a href = "https://hakincodes.tech/"><h3 align= "center"><b> Hack In Codes </b></h3></a> 
 
-<p align="center"><img width=30% src="assets/images/sci.jpg"></p>
+<p align="center"><img width=30% src="assets/images/HakinCodes.png"></p>
 
 <h2 align= "center"><b> Project Maintainers</b></h2>
 
@@ -24,7 +37,7 @@ A project to automatically send invite to all of your social media like LinkedIn
 <a href="./Code_of_conduct.md"><h2 align= "center"><b> Code of Conduct</b></h2></a> 
 <p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
 
-<a href="./License.md"><h2 align= "center"><b> License</b></h2></a> 
+<a href="./License"><h2 align= "center"><b> License</b></h2></a> 
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
 
 ### __Made with 💖 for open source__
