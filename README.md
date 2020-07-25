@@ -1,7 +1,8 @@
 <h1 align = "center"> Social Schedular </h1>
-Who's Not on Social Media everybody is
+Social Media is everywhere. Who doesn't use it?. Twitter, Instagram, Facebook, Snapchat have evolved to be the means of modern communication.
+<p align="center"><img src="https://media.giphy.com/media/atZII8NmbPGw0/giphy.gif" width=50%></p>
 
-<p align="center"><img src="https://media.giphy.com/media/l2SpRK14D6cvy6Uxi/giphy.gif" width=45%></p>
+But, at times i
 
 A project to automatically send invite to all of your social media like LinkedIn, Facebook, email, WhatsApp, Instagram as soon as he finishes filling the form. 
 <p align="center"><img src="https://media.giphy.com/media/YqcW1kMnm3m9YHAUHc/giphy.gif" width=45%></p>
@@ -22,7 +23,6 @@ We can also send deadlines, important meeting announcement. Now no more delays a
 <h2 align= "center"><b>Open Source Programs we have been a part of</b></h2>
 
 <a href = "https://hakincodes.tech/"><h3 align= "center"><b> Hack In Codes </b></h3></a> 
-
 <p align="center"><img width=30% src="assets/images/HakinCodes.png"></p>
 
 <h2 align= "center"><b> Project Maintainers</b></h2>
