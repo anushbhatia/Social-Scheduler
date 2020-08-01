@@ -1,4 +1,4 @@
-<h1 align = "center"> Social Schedular </h1>
+<h1 align = "center"> Social Scheduler </h1>
 Social Media is everywhere. Who doesn't use it?. Twitter, Instagram, Facebook, Snapchat have evolved to be the means of modern communication.
 <p align="center"><img src="https://media.giphy.com/media/atZII8NmbPGw0/giphy.gif" width=50%></p>
 
