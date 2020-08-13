@@ -13,11 +13,22 @@ export default class MyForm extends React.Component {
     const { status } = this.state;
     return (
       <div class="container">
+        <h4>Contact Us Form</h4>
         <form
           onSubmit={this.submitForm}
           action="https://formspree.io/xzbjwkae"
           method="POST"
         >
+          <div class="form-group">
+            <label>Name</label>
+            <input
+              class="form-control"
+              placeholder="Enter your name"
+              type="text"
+              name="name"
+            />
+          </div>
+
           <div class="form-group">
             <label>Email</label>
             <input
@@ -40,7 +51,7 @@ export default class MyForm extends React.Component {
           </div>
 
           {status === "SUCCESS" ? (
-            <p>Thanks!</p>
+            <h5>Thanks!</h5>
           ) : (
             <button type="submit" class="btn btn-primary">
               Submit
