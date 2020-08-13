@@ -1,17 +1,15 @@
 import React from 'react'
-import styled from 'styled-components';
-
+import Header from './Header'
 function LandingPage() {
     return (
         <>
-            <Wrapper>
-                <h1 className="text-center">Social Schedular</h1>
-            </Wrapper>
+            <Header /> 
+            
         </>
     )
 }
 
-const Wrapper =  styled.div`
-`;
+
+;
 
 export default LandingPage

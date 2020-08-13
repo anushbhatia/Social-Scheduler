@@ -1,9 +1,10 @@
 import React from 'react'
+import Header from './Header'
 
 function About() {
     return (
         <>
-            <h1 className="text-center">About</h1>
+            <Header />
         </>
     )
 }
