@@ -8,36 +8,68 @@ import githubLogo from './assets/images/github.svg'
 
 import aboutSvg from './assets/images/about.svg'
 
-const Wrapper =  styled.div`
+import {device} from '../utils/screenSizes'
 
+const Wrapper =  styled.div`
+    
     display:flex;
-    flex-direction:column;
+    flex-direction: column;
+
 `;
 
-const BackgroundImage = styled.div`
-    z-index: -100;
-    position: fixed;
-    opacity: 0.4;
+const BackgroundImage = styled.img`
+
+
+   @media ${device.mobileS} {
+       align-self:center;
+       max-width: 70%;
+    flex-direction: column;
+}
+  @media ${device.laptop} { 
+      max-width: 30%;
+    flex-direction: row;
+  }
 `;
 
 const Content = styled.div`
-    width: 50em;
+
     align-self: center;
     display:flex;
-    margin-top: 5em;
+    margin: 5em 0;
+    width: 70%;
+
+   
+    
+      @media ${device.mobileS} {
+        flex-direction: column;
+
+      }
+      @media ${device.laptop} { 
+        flex-direction: row;
+      }
+  
 `;
 
 const Text = styled.div`
     font-size: 20px;
     margin-right: 1em;
+    
+    @media ${device.mobileS} {
+        flex-direction: column;
+
+      }
+      @media ${device.laptop} { 
+        width: 50%;
+        flex-direction: row;
+      }
 `;
 const Logos = styled.div`
     display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-self: stretch;
-    border-left: 1px solid rgba(0,0,0,0.3);
-    width: 10em;
+    
+    justify-content: stretch;
+    align-self: center;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    
    
     padding: 2em;
     /* height: 50em; */
@@ -46,13 +78,15 @@ const Logos = styled.div`
 const Icon = styled.div`
     width: 50px;
     height: auto;
+    margin: 0 2em;
 `;
 function About() {
     return (
         <Wrapper>
-            <BackgroundImage><img src={aboutSvg}/></BackgroundImage>
+           
             <h1 className="text-center">About</h1>
             <Content>
+            <BackgroundImage  src={aboutSvg}/>
                 <Text>
                     There are many variations of passages of Lorem Ipsum available, 
                     but the majority have suffered alteration in some form, by injected 
@@ -65,12 +99,14 @@ function About() {
                     Lorem Ipsum which looks reasonable. The generated 
                     Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
                 </Text>
-                <Logos>
+                
+              
+            </Content>
+            <Logos>
                     <Icon><img src={instagramLogo} /></Icon>
                     <Icon><img src={whatsappLogo} /></Icon>
                     <Icon><img src={githubLogo} /></Icon>
-                </Logos>
-            </Content>
+            </Logos>
         </Wrapper>
     )
 }
