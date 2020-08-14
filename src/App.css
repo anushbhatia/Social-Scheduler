@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.contact-label {
+    font-family: "Karla", sans-serif;
+    letter-spacing: 1px
+}
+
+::placeholder{
+    font-family: "Karla", sans-serif;
+    letter-spacing: 1px;
+}
+
