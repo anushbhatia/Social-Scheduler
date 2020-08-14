@@ -40,7 +40,7 @@ const Content = styled.div`
     width: 80%;
 
     margin: auto auto;
-    box-shadow: 10px 20px 20px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     padding: 2em;
    
     
