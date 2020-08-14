@@ -28,6 +28,7 @@ const BackgroundImage = styled.img`
   @media ${device.laptop} { 
       max-width: 30%;
     flex-direction: row;
+    margin-right: 2em;
   }
 `;
 
@@ -36,8 +37,11 @@ const Content = styled.div`
     align-self: center;
     display:flex;
     margin: 5em 0;
-    width: 70%;
+    width: 80%;
 
+    margin: auto auto;
+    box-shadow: 10px 20px 20px rgba(0,0,0,0.5);
+    padding: 2em;
    
     
       @media ${device.mobileS} {
@@ -59,7 +63,7 @@ const Text = styled.div`
 
       }
       @media ${device.laptop} { 
-        width: 50%;
+        width: 60%;
         flex-direction: row;
       }
 `;
@@ -83,8 +87,7 @@ const Icon = styled.div`
 function About() {
     return (
         <Wrapper>
-           
-            <h1 className="text-center">About</h1>
+           <h1 className="text-center">About</h1>
             <Content>
             <BackgroundImage  src={aboutSvg}/>
                 <Text>
