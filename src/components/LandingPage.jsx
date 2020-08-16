@@ -1,10 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import useContri from '../lib/contributers'
 
 function LandingPage() {
-    let [data, err] = useContri()
-    console.log(data) 
     return (
         <>
             <Wrapper>
