@@ -4,8 +4,8 @@ import Axios from 'axios'
 
 const useContributerData = props => {
     const URL = 'https://api.github.com/repos/anushbhatia/Social-Scheduler/stats/contributors'
-    let [data, setData] = useState([]);
-    let [err, seterr] = useState(null);
+    const [data, setData] = useState([]);
+    const [err, seterr] = useState(null);
 
     const response = async () => {
         try {
@@ -14,18 +14,19 @@ const useContributerData = props => {
                 url: URL
             });
 
-            let d = []
+            let contribtorList = []
 
             res.data.map(el => {
-                d.push({
-                    id: el.author.id,
-                    username: el.author.login,
-                    avatar: el.author.avatar_url,
-                    profile: el.author.html_url
+                const { id, login, avatar_url, html_url } = el.author
+                contribtorList.push({
+                    id: id,
+                    username: login,
+                    avatar: avatar_url,
+                    profile: html_url
                 })
             })
 
-            setData(d)
+            setData(contribtorList)
         } catch (error) {
             seterr(error);
         }
@@ -33,7 +34,7 @@ const useContributerData = props => {
 
     useEffect(() => {
         response()
-    }, data)
+    }, [])
 
     return [data, err]
 }
