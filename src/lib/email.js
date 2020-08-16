@@ -3,12 +3,13 @@ import emailjs from 'emailjs-com'
 /**
  * Template id should be added to the enviorment 
  * variable 
+ * REACT_APP_EMAIL_TEMPLATE_ID = template id from emailjs dashboard
  */
 
 const sendEmail = ({ name, email, message }) => {
     emailjs.send(
         'default_service',
-        'template_H4uxiwmf',
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
         {
             message: message,
             name: name,
