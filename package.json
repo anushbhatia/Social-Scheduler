@@ -42,7 +42,10 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-plugin-react": "^7.20.6"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
