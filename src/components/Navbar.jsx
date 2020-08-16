@@ -21,6 +21,11 @@ function Navbar() {
                         Contact
                     </div>
                 </Link>
+                <Link to="/detail">
+                    <div className="nav-item text-dark px-4 font-weight-bold">
+                        Contributers
+                    </div>
+                </Link>
             </div>            
         </NavWrapper>
     )

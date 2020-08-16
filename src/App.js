@@ -7,6 +7,10 @@ import Default from './components/Default';
 import Contact from './components/Contact';
 import About from './components/About';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Detail from './components/Detail';
+
+
 
 function App() {
   return(
@@ -16,8 +20,11 @@ function App() {
         <Route exact path="/" component={LandingPage} />        
         <Route path="/about" component={About} />        
         <Route path="/contact" component={Contact} />
+        <Route path="/detail" component={Detail} />
+
         <Route component={Default} />
-      </Switch>      
+      </Switch>  
+      <Footer/>    
     </>
   )
 }
