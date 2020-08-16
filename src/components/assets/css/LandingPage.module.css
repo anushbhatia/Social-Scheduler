@@ -1,0 +1,15 @@
+.Description {
+    margin: 4% 5%;
+    padding: 1%;
+}
+
+.Description h3 {
+    margin: 2.5% 0;
+}
+
+.Player {
+    margin: 5% auto;
+    padding: 2% 3%;
+    width: 90%;
+    height: 80%;
+}
