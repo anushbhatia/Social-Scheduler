@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
-import { filter } from 'lodash'
 
 
 const useContributerData = props => {
@@ -18,17 +17,18 @@ const useContributerData = props => {
             let contribtorList = []
 
             res.data.map(el => {
-                const { id, login, avatar_url, html_url } = el.author
-                contribtorList.push({
-                    id: id,
-                    username: login,
-                    avatar: avatar_url,
-                    profile: html_url
-                })
-            })
 
-            contribtorList = filter(contribtorList, el => {
-                return el.username !== 'anushbhatia' && el.username !== 'smaranjitghose' && el.username !== 'abhu-A-J'
+                const { id, login, avatar_url, html_url } = el.author
+                
+                if (login !== 'anushbhatia' && login !== 'smaranjitghose' && login !== 'abhu-A-J') {
+                    contribtorList.push({
+                        id: id,
+                        username: login,
+                        avatar: avatar_url,
+                        profile: html_url
+                    })
+                }
+
             })
 
             setData(contribtorList)
