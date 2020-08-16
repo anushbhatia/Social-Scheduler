@@ -22,4 +22,4 @@ const sendEmail = ({ name, email, message }) => {
     })
 }
 
-export { sendEmail }
+export default sendEmail
