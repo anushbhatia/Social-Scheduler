@@ -5,7 +5,9 @@ function LandingPage() {
     return (
         <>
             <Wrapper>
-                <h1 className="text-center">Social Schedular</h1>
+                <h1 className="text-center">
+                    Social Scheduler
+                </h1>
             </Wrapper>
         </>
     )
