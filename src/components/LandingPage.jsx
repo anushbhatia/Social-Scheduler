@@ -9,7 +9,9 @@ function LandingPage() {
     return (
         <>
             <Wrapper>
-                <h1 className="text-center">Social Schedular</h1>
+                <h1 className="text-center">
+                    Social Scheduler
+                </h1>
             </Wrapper>
             <div className={classes.Description}>
                 <h2>Social Media is everywhere.<br/>Why not to use it for events management?</h2>
