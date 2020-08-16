@@ -2,6 +2,7 @@
 
 *{
     font-family:'poppins', sans-serif;
+   
 }
 
 
@@ -32,10 +33,15 @@
 .topmargin{
     margin-top:15rem;
 }
-/*footer component css */
-
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+/*footer component css*/
+.footerclass{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#footer{
+    clear: both;
+    position:relative;
+    bottom:0;
+    margin-top:200px;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import '../Detail.css'
 function Footer(){
 return(
-    <div className="footer">
+    <div className="footerclass">
       <footer className="page-footer font-small stylish-color-dark pt-4 bg-dark text-white" id="footer">
 
 
