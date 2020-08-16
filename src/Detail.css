@@ -32,10 +32,10 @@
 .topmargin{
     margin-top:15rem;
 }
+/*footer component css */
 
 .footer{
-    clear: both;
-    position: relative;
-    height: 200px;
-    margin-top:200px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
