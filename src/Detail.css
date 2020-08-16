@@ -32,3 +32,10 @@
 .topmargin{
     margin-top:15rem;
 }
+
+.footer{
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top:200px;
+}

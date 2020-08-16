@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Navbar from './components/Navbar';
 import Detail from './components/Detail';
-
+import Footer from './components/Footer';
 
 function App() {
   return(
@@ -21,7 +21,8 @@ function App() {
         <Route path="/detail" component={Detail} />
 
         <Route component={Default} />
-      </Switch>      
+      </Switch>  
+      <Footer/>    
     </>
   )
 }
