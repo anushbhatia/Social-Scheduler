@@ -1,0 +1,35 @@
+.heading-background {
+    background-color: #1e5977;
+}
+
+.heading {
+    color: #429dbe;
+}
+
+.tag {
+    color: white;
+}
+
+.about-background {
+    background-color: #ebf6f6;
+}
+
+.team-image {
+    width: 95%;
+    height: 95%;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icons:hover {
+    transform: scale(1.5);
+    transition: 0.2s ease-in-out;
+}

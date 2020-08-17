@@ -5,7 +5,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import LandingPage from './components/LandingPage';
 import Default from './components/Default';
 import Contact from './components/Contact';
-import About from './components/About';
+import AboutUs from "./components/About";
 import Navbar from './components/Navbar';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={LandingPage} />        
-        <Route path="/about" component={About} />        
+        <Route path="/about" component={AboutUs} />
         <Route path="/contact" component={Contact} />
         <Route component={Default} />
       </Switch>      
