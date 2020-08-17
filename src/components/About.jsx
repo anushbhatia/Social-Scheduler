@@ -106,9 +106,9 @@ function About() {
               
             </Content>
             <Logos>
-                    <Icon><img src={instagramLogo} alt="Instragam logo" /></Icon>
-                    <Icon><img src={whatsappLogo} alt="Whatsapp logo" /></Icon>
-                    <Icon><img src={githubLogo} alt="Github logo" /></Icon>
+                    <Icon><img src={instagramLogo} alt='Instagram Logo'/></Icon>
+                    <Icon><img src={whatsappLogo} alt='WhatsApp Logo'/></Icon>
+                    <Icon><img src={githubLogo} alt='GitHub Logo'/></Icon>
             </Logos>
         </Wrapper>
     )
