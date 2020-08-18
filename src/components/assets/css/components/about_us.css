@@ -19,6 +19,10 @@
     height: 95%;
 }
 
+.mobile-view {
+    display: none;
+}
+
 .social {
     display: flex;
     justify-content: space-between;
@@ -32,4 +36,20 @@
 .social-icons:hover {
     transform: scale(1.5);
     transition: 0.2s ease-in-out;
+}
+
+/*mobile devices*/
+
+@media(max-width: 767px) {
+    .team-image {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+
+    .laptop-view {
+        display: none;
+    }
 }

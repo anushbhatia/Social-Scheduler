@@ -1,5 +1,5 @@
 import React from "react";
-import "./assets/css/components/about.us.css";
+import "./assets/css/components/about_us.css";
 import Team from "./assets/images/undraw_team_spirit_hrr4.svg";
 //Icons
 import Facebook from "./assets/images/facebook.svg";
@@ -11,6 +11,7 @@ import Twitter from "./assets/images/twitter.svg";
 const AboutUs = () => {
     return (
         <div>
+            {/*-------Name and tagline of the website------------------ */}
             <div className="container-fluid heading-background">
                 <div className="row">
                     <div className="text-center col-12 col-md-12 col-sm-12 my-5">
@@ -19,12 +20,26 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
+            {/*-------About the website------------------ */}
             <div className="container about-backgroud">
                 <div className="row">
                     <div className="col-6 col-md-6 col-sm-6 my-5">
                         <img src={Team} alt="team" className="team-image"/>
                     </div>
-                    <div className="text-center col-6 col-md-6 col-sm-6 my-5">
+                    {/*-------For desktop/laptop------------------ */}
+                    <div className="text-center col-6 col-md-6 col-sm-6 my-5 laptop-view">
+                        <h4>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </h4>
+                    </div>
+                    {/*-------For mobile------------------ */}
+                    <div className="text-center col-12 col-md-12 col-sm-12 mobile-view">
                         <h4>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -37,6 +52,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
+            {/*-------All Social Icons------------------ */}
             <div className="container social">
                 <div className="social-handles">
                     <img src={Facebook} alt="Facebook" className="social-icons my-2"/>
