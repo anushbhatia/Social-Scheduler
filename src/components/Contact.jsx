@@ -79,7 +79,7 @@ export default class MyForm extends React.Component {
                 </div>
                 <div className="form-group text-center">
                   {status === "SUCCESS" ? (
-                    <h5 class="text-success">
+                    <h5 className="text-success">
                       Thanks! Your response has been submitted
                     </h5>
                   ) : (
@@ -92,7 +92,7 @@ export default class MyForm extends React.Component {
                     </button>
                   )}
                   {status === "ERROR" && (
-                    <h5 className="text-danger">Ooops! There was an error.</h5>
+                    <h5 className="text-danger">Oops! There was an error.</h5>
                   )}
                 </div>
               </form>
