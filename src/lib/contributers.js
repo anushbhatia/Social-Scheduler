@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
+import adminList from '../data/adminList'
+import mentorList from '../data/mentorList'
 
 
 const useContributerData = props => {
@@ -17,13 +19,18 @@ const useContributerData = props => {
             let contribtorList = []
 
             res.data.map(el => {
+
                 const { id, login, avatar_url, html_url } = el.author
-                contribtorList.push({
-                    id: id,
-                    username: login,
-                    avatar: avatar_url,
-                    profile: html_url
-                })
+
+                if(!adminList.includes(login) && !mentorList.includes(login)){
+                    contribtorList.push({
+                        id: id,
+                        username: login,
+                        avatar: avatar_url,
+                        profile: html_url
+                    })
+                }
+
             })
 
             setData(contribtorList)
