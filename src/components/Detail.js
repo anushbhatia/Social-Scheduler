@@ -8,13 +8,11 @@ class Detail extends React.Component{
     render(){
         return(
          <div className="detail container">
-            
             <div className="container maintainers" >
             <h2>
                     Project Maintainers
                 </h2>
                 <div className="row">
-               
                 </div>
                 <div className="row">
                 <div className="col-sm-12 col-md-6" align="center">
@@ -26,7 +24,6 @@ class Detail extends React.Component{
                     </div>
                     </div>
                 </div>
-                
                 <div className="col-sm-12 col-md-6" align="center">
                 <div className="card text-center" >
                     <img className="card-img-top"   src={boyimage} alt="Card image cap"/>
@@ -38,14 +35,13 @@ class Detail extends React.Component{
                 </div>
                 </div>
             </div>
-                
 
 
          <div class="container topmargin maintainers" id="mentor">
                 <h2 >Mentors</h2>
-    
+
             <div className="row  ">
-                
+
                 <div className="col-sm-12 col-md-4">
                     <div className="card text-center">
                     <img className="card-img-top" src={boyimage} alt="Card image cap"/>
@@ -56,7 +52,6 @@ class Detail extends React.Component{
                     </div>
                     </div>
                 </div>
-                
                 <div className="col-sm-12 col-md-4">
                 <div className="card text-center">
                     <img className="card-img-top" src={girlimage} alt="Card image cap"/>
@@ -75,13 +70,11 @@ class Detail extends React.Component{
                     </div>
                 </div>
                 </div>
-                
             </div>
         </div>
 
 
 
-                
         <div className="container topmargin maintainers">
         <h2>Contributers</h2>
 
@@ -96,7 +89,6 @@ class Detail extends React.Component{
                     </div>
                     </div>
                </div>
-                
                 <div class="col-sm-12 col-md-4">
                   <div class="card text-center" >
                     <img class="card-img-top"   src={girlimage} alt="Card image cap"/>
@@ -115,7 +107,6 @@ class Detail extends React.Component{
                     </div>
                 </div>
                 </div>
-                
              </div>
 
             <div className="row topmargin">
@@ -129,7 +120,6 @@ class Detail extends React.Component{
                     </div>
                     </div>
                </div>
-                
                <div className="col-sm-12 col-md-4">
                   <div className="card text-center">
                     <img className="card-img-top"  src={boyimage} alt="Card image cap"/>
@@ -149,14 +139,15 @@ class Detail extends React.Component{
                     </div>
                   </div>
                 </div>
-                
+
            </div>
-            
+
         </div>
         </div>
-         
+
         )
     }
 }
 
-export default Detail;
+export default Detail; 
+ 
