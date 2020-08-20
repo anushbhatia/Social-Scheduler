@@ -1,11 +1,12 @@
 import React from 'react';
-
+import Error from "./Page_404/Error.jsx"
 function Default() {
-    return (
-        <div className="d-flex justify-content-center">
-            <h1>Page Not Found</h1>   
-        </div>
-    )
+return (
+  <div className="App">
+  <Error />
+</div>
+)
 }
-
 export default Default
+
+

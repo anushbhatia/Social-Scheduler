@@ -1,0 +1,90 @@
+*{
+margin:0;
+padding:0;
+background-color:white;
+width: 100% vw;
+height: 100% vh;
+}
+.style{
+margin-left: 25%;
+margin-right: 33%;
+font-size:24px;
+font-weight:bold;
+color:darkgrey;
+padding-top: 50px; 
+padding-bottom:0px;
+text-align:center;
+}
+.text{
+font-size: 20px;
+text-align: center;
+}
+img {
+width: 300px;
+height: 200px;
+}
+#styling{
+height: 70px;
+width: 90px;
+float: left;
+}
+@keyframes colorchange{
+20%{ color:blue;}
+40%{ color:green;}
+60%{ color:red;}
+80%{ color:black;}
+}
+.button{
+margin:7px;
+padding:15px 25px;
+font-size:24px;
+text-align:center;
+cursor:pointer;
+font-weight:bold;
+outline:none;
+color:indigo;
+background-color:lightgrey;
+border:none;
+border-radius:5px;
+animation:colorchange 3s infinite alternate;
+}
+button :active{
+transform:translateY(4px);
+}
+@media (max-width: 768px) and (min-width: 375px) {
+.style{
+text-align: center;
+margin: 20px;
+}
+.text{
+font-size: 20px;
+text-align: center;
+}
+}
+@media (max-width:375px)and (min-width: 320px){
+.text{
+font-size: 18px;
+text-align: left;
+}
+#styling{
+height: 50px;
+width:50px;
+}
+}
+@media (max-width:320px){
+#styling{
+height: 20px;
+width:20px;
+}
+.style{
+text-align: center;
+margin:0px;
+}
+.button{
+font-size: 18px;
+text-align:center;
+cursor:pointer;
+font-weight:bold;
+outline:none;
+}
+}
