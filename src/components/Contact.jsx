@@ -14,7 +14,12 @@ function Contact() {
     const {name, email, subject, message} = formData;
 
     const onChange = (e) => {
-        setFormData({...formData, [e.target.name]: e.target.value})
+        setFormData((prevState => {
+            return {
+                ...prevState,
+                [e.target.name]: e.target.value
+            }
+        }))
     };
 
     const submitForm = async (ev) => {
@@ -23,7 +28,6 @@ function Contact() {
             headers: {'Accept': 'application/json'}
         }
         const res = await axios.post('https://formspree.io/xzbjwkae', formData, config);
-        console.log(res);
         if (res.status === 200) {
             setFormData({name: '', message: '', subject: '', email: ''});
             setStatus("SUCCESS");
@@ -57,7 +61,7 @@ function Contact() {
                             <div className="form-group mb-4">
                                 <label className="h5 text-dark contact-label">Name</label>
                                 <input
-                                    type="name"
+                                    type="text"
                                     className="form-control"
                                     name="name"
                                     value={name}
