@@ -1,26 +1,35 @@
 import React, {useState} from "react";
+import axios from 'axios';
 import contact_illustration from "../contact_illustration.svg";
 
 function Contact() {
     const [status, setStatus] = useState("");
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
 
-    const submitForm = (ev) => {
+    const {name, email, subject, message} = formData;
+
+    const onChange = (e) => {
+        setFormData({...formData, [e.target.name]: e.target.value})
+    };
+
+    const submitForm = async (ev) => {
         ev.preventDefault();
-        const form = ev.target;
-        const data = new FormData(form);
-        const xhr = new XMLHttpRequest();
-        xhr.open(form.method, form.action);
-        xhr.setRequestHeader("Accept", "application/json");
-        xhr.onreadystatechange = () => {
-            if (xhr.readyState !== XMLHttpRequest.DONE) return;
-            if (xhr.status === 200) {
-                form.reset();
-                setStatus("SUCCESS");
-            } else {
-                setStatus("ERROR");
-            }
-        };
-        xhr.send(data);
+        const config = {
+            headers: {'Accept': 'application/json'}
+        }
+        const res = await axios.post('https://formspree.io/xzbjwkae', formData, config);
+        console.log(res);
+        if (res.status === 200) {
+            setFormData({name: '', message: '', subject: '', email: ''});
+            setStatus("SUCCESS");
+        } else {
+            setStatus("ERROR");
+        }
     }
 
     return (
@@ -44,8 +53,6 @@ function Contact() {
                             className="needs-validation"
                             noValidate
                             onSubmit={(ev) => submitForm(ev)}
-                            action="https://formspree.io/xzbjwkae"
-                            method="POST"
                         >
                             <div className="form-group mb-4">
                                 <label className="h5 text-dark contact-label">Name</label>
@@ -53,6 +60,8 @@ function Contact() {
                                     type="name"
                                     className="form-control"
                                     name="name"
+                                    value={name}
+                                    onChange={e => onChange(e)}
                                     placeholder="Eg. Harry Singh"
                                     required
                                 />
@@ -63,6 +72,8 @@ function Contact() {
                                     type="email"
                                     className="form-control"
                                     name="email"
+                                    value={email}
+                                    onChange={e => onChange(e)}
                                     placeholder="Eg. example@example.com"
                                     required
                                 />
@@ -73,6 +84,8 @@ function Contact() {
                                     type="text"
                                     className="form-control"
                                     name="subject"
+                                    value={subject}
+                                    onChange={e => onChange(e)}
                                     placeholder="Write the subject of the mail here."
                                     required
                                 />
@@ -83,6 +96,8 @@ function Contact() {
                                     type="text"
                                     className="form-control"
                                     name="message"
+                                    value={message}
+                                    onChange={e => onChange(e)}
                                     placeholder="Write your message here."
                                     style={{minHeight: "20vh"}}
                                     required
@@ -97,7 +112,7 @@ function Contact() {
                                     <button
                                         type="submit"
                                         className="btn btn-outline-success rounded-pill shadow"
-                                        style={{width: "25%"}}
+                                        style={{width: "30%"}}
                                     >
                                         Send
                                     </button>
