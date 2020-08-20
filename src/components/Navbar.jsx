@@ -2,15 +2,21 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaPaperPlane } from "react-icons/fa";
 
+
+
 const Navbar = () => {
+
 
   /*-------All Nav links goes here------------------ */
   const Navlinks = [
     { name: "Home", path: "/" },
         { name: "Contact", path: "/contact" },
         { name: "About", path: "/about" },
-    ];
+        { name: "Contributors", path: "/detail" },
 
+        
+    ];
+              
     return (
       <nav className="navbar navbar-expand-lg navbar-light shadow mb-3 py-3 bg-white">
         <div className="container">
