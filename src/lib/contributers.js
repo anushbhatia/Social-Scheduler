@@ -31,11 +31,7 @@ const useContributerData = (props) => {
           });
         }
       });
-      const data = [];
-      for (let i = 0; i < contribtorList.length; i = i + 3) {
-        data.push(contribtorList.slice(i, i + 3));
-      }
-      setData(data);
+      setData(contribtorList);
     } catch (error) {
       seterr(error);
     }
@@ -47,19 +43,8 @@ const useContributerData = (props) => {
 
   // return [data, err]
   if (data.length === 0) return null;
-  return data.map((el, ind) => {
-    const classes = ['row', 'topmargin'];
-    if (ind === 0) {
-      classes.pop();
-    }
-
-    return (
-      <div className={classes.join(' ')} key={ind + ''}>
-        {el.map((el) => {
-          return <Card image={el.avatar} name={el.username} key={el.id} />;
-        })}
-      </div>
-    );
+  return data.map((el) => {
+    return <Card image={el.avatar} name={el.username} key={el.id} />;
   });
 };
 

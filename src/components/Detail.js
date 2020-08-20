@@ -111,7 +111,9 @@ class Detail extends React.Component {
 
         <div className="container topmargin maintainers">
           <h2>Contributers</h2>
-          <ContributerData />
+          <div className="contain">
+            <ContributerData />
+          </div>
         </div>
       </div>
     );
