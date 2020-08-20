@@ -30,13 +30,13 @@ export default class MyForm extends React.Component {
             </div>
             <div className="col-md-6">
               <form
-                class="needs-validation"
-                novalidate
+                className="needs-validation"
+                noValidate
                 onSubmit={this.submitForm}
                 action="https://formspree.io/xzbjwkae"
                 method="POST"
               >
-                <div class="form-group mb-4">
+                <div className="form-group mb-4">
                   <label className="h5 text-dark contact-label">Name</label>
                   <input
                     type="name"
@@ -46,7 +46,7 @@ export default class MyForm extends React.Component {
                     required
                   />
                 </div>
-                <div class="form-group mb-4">
+                <div className="form-group mb-4">
                   <label className="h5 contact-label">Email</label>
                   <input
                     type="email"
@@ -56,7 +56,7 @@ export default class MyForm extends React.Component {
                     required
                   />
                 </div>
-                <div class="form-group mb-4">
+                <div className="form-group mb-4">
                   <label className="h5 contact-label">Subject</label>
                   <input
                     type="text"
@@ -66,7 +66,7 @@ export default class MyForm extends React.Component {
                     required
                   />
                 </div>
-                <div class="form-group mb-4">
+                <div className="form-group mb-4">
                   <label className="h5 contact-label">Message</label>
                   <textarea
                     type="text"
@@ -75,11 +75,11 @@ export default class MyForm extends React.Component {
                     placeholder="Write your message here."
                     style={{ minHeight: "20vh" }}
                     required
-                  ></textarea>
+                  />
                 </div>
                 <div className="form-group text-center">
                   {status === "SUCCESS" ? (
-                    <h5 class="text-success">
+                    <h5 className="text-success">
                       Thanks! Your response has been submitted
                     </h5>
                   ) : (
@@ -92,7 +92,7 @@ export default class MyForm extends React.Component {
                     </button>
                   )}
                   {status === "ERROR" && (
-                    <h5 class="text-danger">Ooops! There was an error.</h5>
+                    <h5 className="text-danger">Oops! There was an error.</h5>
                   )}
                 </div>
               </form>
