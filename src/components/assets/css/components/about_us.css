@@ -1,9 +1,28 @@
-.heading-background {
-    background-color: #1e5977;
+header {
+    position: relative;
+    text-align: center;
+    height: 350px;
+    width: 100vw;
+    background: black;
+    overflow: hidden;
+}
+
+.bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-bg {
+    object-fit: cover;
+    opacity: 0.5;
 }
 
 .heading {
-    color: #429dbe;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
 }
 
 .tag {
@@ -40,7 +59,7 @@
 
 /*mobile devices*/
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
     .team-image {
         display: none;
     }

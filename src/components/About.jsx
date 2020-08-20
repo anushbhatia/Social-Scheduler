@@ -7,19 +7,19 @@ import Github from "./assets/images/github.svg";
 import Instagram from "./assets/images/instagram.svg";
 import Linkdin from "./assets/images/linkedin.svg";
 import Twitter from "./assets/images/twitter.svg";
+import AboutBg from "./assets/images/about-background.jpg";
 
 const AboutUs = () => {
     return (
         <div>
             {/*-------Name and tagline of the website------------------ */}
-            <div className="container-fluid heading-background">
-                <div className="row">
-                    <div className="text-center col-12 col-md-12 col-sm-12 my-5">
-                        <h1 className="heading">The Social Scheduler</h1>
-                        <p className="tag">Lorem Ipsum has been the industry's standard dummy</p>
-                    </div>
+            <header>
+                <img src={AboutBg} className="social-bg"/>
+                <div className="bg-text">
+                    <h1 className="heading">The Social Scheduler</h1>
+                    <p className="tag">Lorem Ipsum has been the industry's standard dummy</p>
                 </div>
-            </div>
+            </header>
             {/*-------About the website------------------ */}
             <div className="container about-backgroud">
                 <div className="row">
