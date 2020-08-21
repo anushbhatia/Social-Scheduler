@@ -16,7 +16,8 @@ header {
 
 .social-bg {
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.4;
+    width: 100%;
 }
 
 .heading {
@@ -70,5 +71,11 @@ header {
 
     .laptop-view {
         display: none;
+    }
+
+    .social-bg {
+        object-fit: cover;
+        opacity: 0.4;
+        width: auto;
     }
 }
