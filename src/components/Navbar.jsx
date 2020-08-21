@@ -14,9 +14,9 @@ const Navbar = () => {
         { name: "About", path: "/about" },
         { name: "Contributors", path: "/detail" },
 
-        
+
     ];
-              
+
     return (
       <nav className="navbar navbar-expand-lg navbar-light shadow mb-3 py-3 bg-white">
         <div className="container">
@@ -48,9 +48,8 @@ const Navbar = () => {
                     <NavLink key={i+1} exact className="d-lg-none d-xl-none nav-link my-2" to={i.path}>
                     {i.name}
                     </NavLink>
-                ])                  
+                ])
               }
-              
             </div>
           </div>
         </div>
