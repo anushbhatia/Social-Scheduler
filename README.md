@@ -49,16 +49,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <!--------------------new work------------------------>
 ## REQUIREMENTS:-
-### Node js:- Node.js® is a JavaScript runtime built on <a href="https://v8.dev/">Chrome's V8 JavaScript engine.</a> 
+### Node.js:- Node.js® is a JavaScript runtime built on <a href="https://v8.dev/">Chrome's V8 JavaScript engine.</a> 
   
-To install Node Js :-
+To install Node.Js :-
  - Installing via package Manager click <a href="https://nodejs.org/en/download/package-manager/">HERE</a>
  - Installing For Different OS virsons click <a href="https://nodejs.org/en/download/">HERE</a> 
 
-## Step to Run application 
- - Setup project in your Machine through [Guidence.](https://github.com/anushbhatia/Social-Scheduler/blob/master/Contribute.MD)
+## Steps to Run application 
+ - Before you start contributing make sure to check our [Contribution Guidence.](https://github.com/anushbhatia/Social-Scheduler/blob/master/Contribute.MD)
  
- -  Install all the dependenciea for the project using `npm install`
+ -  Install all the dependencies for the project using `npm install`
  
  -  Start the application using `npm start`
  
