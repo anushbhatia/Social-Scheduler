@@ -8,24 +8,23 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Detail from './components/Detail';
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  return(
+  return (
     <>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={LandingPage} />        
-        <Route path="/about" component={About} />        
+        <Route exact path="/" component={LandingPage} />
+        <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/detail" component={Detail} />
 
         <Route component={Default} />
-      </Switch>  
-      <Footer/>    
+      </Switch>
+      <Footer />
     </>
-  )
+  );
 }
 
 export default App;

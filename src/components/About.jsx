@@ -1,117 +1,206 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 
 //icons
-import instagramLogo from './assets/images/instagram.svg'
-import whatsappLogo from './assets/images/whatsapp.svg'
-import githubLogo from './assets/images/github.svg'
+import instagramLogo from './assets/images/instagram.svg';
+import whatsappLogo from './assets/images/whatsapp.svg';
+import githubLogo from './assets/images/github.svg';
 
-import aboutSvg from './assets/images/about.svg'
+import aboutSvg from './assets/images/about.svg';
 
-import {device} from '../utils/screenSizes'
+import { device } from '../utils/screenSizes';
 
-const Wrapper =  styled.div`
-    
-    display:flex;
-    flex-direction: column;
-
+import { Jumbotron, Container, Card, Button } from 'react-bootstrap';
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 const BackgroundImage = styled.img`
-
-
-   @media ${device.mobileS} {
-       align-self:center;
-       max-width: 70%;
+  @media ${device.mobileS} {
+    align-self: center;
+    max-width: 70%;
     flex-direction: column;
-}
-  @media ${device.laptop} { 
-      max-width: 30%;
+    postion: relative;
+  }
+  @media ${device.laptop} {
+    max-width: 30%;
     flex-direction: row;
     margin-right: 2em;
   }
 `;
 
 const Content = styled.div`
+  align-self: center;
+  display: flex;
 
-    align-self: center;
-    display:flex;
-    margin: 5em 0;
-    width: 80%;
-
-    margin: auto auto;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    padding: 2em;
-   
-    
-      @media ${device.mobileS} {
-        flex-direction: column;
-
-      }
-      @media ${device.laptop} { 
-        flex-direction: row;
-      }
-  
+  width: 90%;
+  margin: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  @media ${device.mobileS} {
+    flex-direction: column;
+  }
+  @media ${device.laptop} {
+    flex-direction: row;
+  }
 `;
 
 const Text = styled.div`
-    font-size: 20px;
-    margin-right: 1em;
-    
-    @media ${device.mobileS} {
-        flex-direction: column;
-
-      }
-      @media ${device.laptop} { 
-        width: 60%;
-        flex-direction: row;
-      }
+  font-size: 20px;
+  margin-right: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  @media ${device.mobileS} {
+    flex-direction: column;
+  }
+  @media ${device.laptop} {
+    width: 60%;
+    flex-direction: row;
+  }
 `;
 const Logos = styled.div`
-    display:flex;
-    
-    justify-content: stretch;
-    align-self: center;
-    border-top: 1px solid rgba(0,0,0,0.3);
-    
-   
-    padding: 2em;
-    /* height: 50em; */
-`;
+  display: flex;
 
-const Icon = styled.div`
-    width: 50px;
-    height: auto;
-    margin: 0 2em;
+  justify-content: stretch;
+  align-self: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+  padding: 2em;
+  /* height: 50em; */
 `;
+const Heading = styled.div`
+  font-weight: bold;
+  color: green;
+  text-align: center;
+  margin-right: 1em;
+  font-family: Georgia, 'Times New Roman', serif !important;
+  @media ${device.mobileS} {
+    flex-direction: column;
+    text-align: left;
+    font-size: 30px;
+  }
+  @media ${device.laptop} {
+    width: 80%;
+    flex-direction: row;
+    font-size: 40px;
+  }
+`;
+const HeaderMain = styled.div`
+  text-align: center;
+  font-weight: 900;
+  color: black;
+  text-shadow: 1px 1px rgb(25, 51, 82);
+  @media ${device.mobileS} {
+    flex-direction: column;
+    text-align: center;
+    font-size: 35px;
+  }
+  @media ${device.laptop} {
+    font-size: 60px;
+    flex-direction: row;
+  }
+`;
+const Icon = styled.div`
+  width: 50px;
+  height: auto;
+  margin: 0 2em;
+`;
+const jumbotron = {
+  backgroundImage:
+    'url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg)',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+};
 function About() {
-    return (
-        <Wrapper>
-           <h1 className="text-center">About</h1>
-            <Content>
-            <BackgroundImage  src={aboutSvg}/>
-                <Text>
-                    There are many variations of passages of Lorem Ipsum available, 
-                    but the majority have suffered alteration in some form, by injected 
-                    humour, or randomised words which don't look even slightly believable. 
-                    If you are going to use a passage of Lorem Ipsum, you need to be sure there 
-                    isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-                    generators on the Internet tend to repeat predefined chunks as necessary, making 
-                    this the first true generator on the Internet. It uses a dictionary of over 200
-                    Latin words, combined with a handful of model sentence structures, to generate 
-                    Lorem Ipsum which looks reasonable. The generated 
-                    Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                </Text>
-                
-              
-            </Content>
-            <Logos>
-                    <Icon><img src={instagramLogo} alt='Instagram Logo'/></Icon>
-                    <Icon><img src={whatsappLogo} alt='WhatsApp Logo'/></Icon>
-                    <Icon><img src={githubLogo} alt='GitHub Logo'/></Icon>
-            </Logos>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <Jumbotron style={jumbotron}>
+        <Container>
+          <HeaderMain>
+            Make work life simpler, more pleasant and more productive.
+          </HeaderMain>
+          <p style={{ color: 'grey', fontSize: '20px', margin: '40px' }}>
+            We automatically send invite to all of your social media like
+            LinkedIn, Facebook, email, WhatsApp, Instagram as soon as he
+            finishes filling the form.
+          </p>
+        </Container>
+      </Jumbotron>
+      <Content>
+        <BackgroundImage src={aboutSvg} />
+        <Text>
+          <Heading>Who are we ?</Heading>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type men book. It has survived not only five
+          centuries Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type men book. It has survived not
+          only five centuries
+        </Text>
+      </Content>
+      <Content>
+        <Text>
+          <Heading>What we do ?</Heading>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type men book. It has survived not only five
+          centuries Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type men book. It has survived not
+          only five centuries
+        </Text>
+        <BackgroundImage src={aboutSvg} />
+      </Content>
+      <Content>
+        <BackgroundImage src={aboutSvg} />
+        <Text>
+          <Heading> Our Objective</Heading>
+          <ul>
+            <li>
+              {' '}
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry
+            </li>
+            <li>
+              {' '}
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry
+            </li>
+            <li>
+              {' '}
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry
+            </li>
+            <li>
+              {' '}
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry
+            </li>
+          </ul>
+        </Text>
+      </Content>
+      <br></br>
+
+      <Logos>
+        <Icon>
+          <img src={instagramLogo} alt="Instagram Logo" />
+        </Icon>
+        <Icon>
+          <img src={whatsappLogo} alt="WhatsApp Logo" />
+        </Icon>
+        <Icon>
+          <img src={githubLogo} alt="GitHub Logo" />
+        </Icon>
+      </Logos>
+    </Wrapper>
+  );
 }
 
-export default About
+export default About;
