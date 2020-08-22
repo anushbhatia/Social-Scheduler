@@ -14,12 +14,13 @@ function Contact() {
     const {name, email, subject, message} = formData;
 
     const onChange = (e) => {
-        setFormData((prevState => {
+        e.persist();
+        setFormData((prevState) => {
             return {
                 ...prevState,
-                [e.target.name]: e.target.value
-            }
-        }))
+                [e.target.name]: e.target.value,
+            };
+        });
     };
 
     const submitForm = async (ev) => {
