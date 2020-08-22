@@ -71,7 +71,7 @@ const Logos = styled.div`
 `;
 const Heading = styled.div`
   font-weight: bold;
-  color: green;
+  color: #15669c !important
   text-align: center;
   margin-right: 1em;
   font-family: Georgia, 'Times New Roman', serif !important;
@@ -97,7 +97,7 @@ const HeaderMain = styled.div`
     font-size: 35px;
   }
   @media ${device.laptop} {
-    font-size: 60px;
+    font-size: 55px;
     flex-direction: row;
   }
 `;
@@ -119,7 +119,7 @@ function About() {
       <Jumbotron style={jumbotron}>
         <Container>
           <HeaderMain>
-            Make work life simpler, more pleasant and more productive.
+            Lorem Ipsum is simply dummy text of the printing .
           </HeaderMain>
           <p style={{ color: 'grey', fontSize: '20px', margin: '40px' }}>
             We automatically send invite to all of your social media like
