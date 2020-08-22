@@ -48,67 +48,21 @@ We can also send deadlines, important meeting announcement. Now no more delays a
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <!--------------------new work------------------------>
+## REQUIREMENTS:-
+### Node js:- Node.js® is a JavaScript runtime built on <a href="https://v8.dev/">Chrome's V8 JavaScript engine.</a> 
+  
+To install Node Js :-
+ - Installing via package Manager click <a href="https://nodejs.org/en/download/package-manager/">HERE</a>
+ - Installing For Different OS virsons click <a href="https://nodejs.org/en/download/">HERE</a> 
 
-# Information for changes.
-
-- **Fork it** :
-
-    Get your own Fork/Copy of repository by clicking `Fork` button right upper corner.<br><br>
-
-- **Clone**:
-
-```sh
-$ https://github.com/anushbhatia/Social-Scheduler.git
-```
-
-- **Branching**
-```
-$ git checkout -b [your_branch_name]
-```
-
-- **Make Changes in Source Code**
-
-#### Setting up Project
-
-- Install dependencies using
-```
-pip install -r requirements.txt
-```
-- Make migrations using
-```
-python manage.py makemigrations
-```
-- Migrate Database
-```
-python manage.py migrate
-```
-- Create a superuser
-```
-python manage.py createsuperuser
-```
-- Run server using
-```
-python manage.py runserver
-```
-
-- **Stage your Changes and Commit**
-```
-# For adding/Staging Changes
-
-$ git aad .
-
-
-# For Commiting Changes
-
-$ git commit -m "<your commit message>"
-
-```
-
-- **Push your Commit to Repo**
-```
-$ git push origin <barnch_name>
-```
-
+## Step to Run application 
+ - Setup project in your Machine through [Guidence.](https://github.com/anushbhatia/Social-Scheduler/blob/master/Contribute.MD)
+ 
+ -  Install all the dependenciea for the project using `npm install`
+ 
+ -  Start the application using `npm start`
+ 
+ - The application will be served at `localhost:3000`.
 
 ## Learn More
 If You have any Issue regarding the contribution then please check [this](https://github.com/anushbhatia/Social-Scheduler/blob/master/Contribute.MD) out.
