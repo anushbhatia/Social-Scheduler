@@ -2,7 +2,6 @@ header {
     position: relative;
     text-align: center;
     height: 350px;
-    width: 100vw;
     background: black;
     overflow: hidden;
 }
