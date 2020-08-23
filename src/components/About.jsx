@@ -1,117 +1,77 @@
-import React from 'react'
-import styled from 'styled-components';
+import React from "react";
+import "./assets/css/components/about_us.css";
+import Team from "./assets/images/undraw_team_spirit_hrr4.svg";
+//Icons
+import Facebook from "./assets/images/facebook.svg";
+import Github from "./assets/images/github.svg";
+import Instagram from "./assets/images/instagram.svg";
+import Linkdin from "./assets/images/linkedin.svg";
+import Twitter from "./assets/images/twitter.svg";
+import AboutBg from "./assets/images/about-background.jpg";
 
-//icons
-import instagramLogo from './assets/images/instagram.svg'
-import whatsappLogo from './assets/images/whatsapp.svg'
-import githubLogo from './assets/images/github.svg'
-
-import aboutSvg from './assets/images/about.svg'
-
-import {device} from '../utils/screenSizes'
-
-const Wrapper =  styled.div`
-    
-    display:flex;
-    flex-direction: column;
-
-`;
-
-const BackgroundImage = styled.img`
-
-
-   @media ${device.mobileS} {
-       align-self:center;
-       max-width: 70%;
-    flex-direction: column;
-}
-  @media ${device.laptop} { 
-      max-width: 30%;
-    flex-direction: row;
-    margin-right: 2em;
-  }
-`;
-
-const Content = styled.div`
-
-    align-self: center;
-    display:flex;
-    margin: 5em 0;
-    width: 80%;
-
-    margin: auto auto;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    padding: 2em;
-   
-    
-      @media ${device.mobileS} {
-        flex-direction: column;
-
-      }
-      @media ${device.laptop} { 
-        flex-direction: row;
-      }
-  
-`;
-
-const Text = styled.div`
-    font-size: 20px;
-    margin-right: 1em;
-    
-    @media ${device.mobileS} {
-        flex-direction: column;
-
-      }
-      @media ${device.laptop} { 
-        width: 60%;
-        flex-direction: row;
-      }
-`;
-const Logos = styled.div`
-    display:flex;
-    
-    justify-content: stretch;
-    align-self: center;
-    border-top: 1px solid rgba(0,0,0,0.3);
-    
-   
-    padding: 2em;
-    /* height: 50em; */
-`;
-
-const Icon = styled.div`
-    width: 50px;
-    height: auto;
-    margin: 0 2em;
-`;
-function About() {
+const AboutUs = () => {
     return (
-        <Wrapper>
-           <h1 className="text-center">About</h1>
-            <Content>
-            <BackgroundImage  src={aboutSvg}/>
-                <Text>
-                    There are many variations of passages of Lorem Ipsum available, 
-                    but the majority have suffered alteration in some form, by injected 
-                    humour, or randomised words which don't look even slightly believable. 
-                    If you are going to use a passage of Lorem Ipsum, you need to be sure there 
-                    isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-                    generators on the Internet tend to repeat predefined chunks as necessary, making 
-                    this the first true generator on the Internet. It uses a dictionary of over 200
-                    Latin words, combined with a handful of model sentence structures, to generate 
-                    Lorem Ipsum which looks reasonable. The generated 
-                    Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                </Text>
-                
-              
-            </Content>
-            <Logos>
-                    <Icon><img src={instagramLogo} alt='Instagram Logo'/></Icon>
-                    <Icon><img src={whatsappLogo} alt='WhatsApp Logo'/></Icon>
-                    <Icon><img src={githubLogo} alt='GitHub Logo'/></Icon>
-            </Logos>
-        </Wrapper>
+        <div>
+            {/*-------Name and tagline of the website------------------ */}
+            <header>
+                <img src={AboutBg} className="social-bg"/>
+                <div className="bg-text">
+                    <h1 className="heading">The Social Scheduler</h1>
+                    <p className="tag">Lorem Ipsum has been the industry's standard dummy</p>
+                </div>
+            </header>
+            {/*-------About the website------------------ */}
+            <div className="container about-backgroud">
+                <div className="row">
+                    <div className="col-6 col-md-6 col-sm-6 my-5">
+                        <img src={Team} alt="team" className="team-image"/>
+                    </div>
+                    {/*-------For desktop/laptop------------------ */}
+                    <div className="text-center col-6 col-md-6 col-sm-6 my-5 laptop-view">
+                        <h4>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </h4>
+                    </div>
+                    {/*-------For mobile------------------ */}
+                    <div className="text-center col-12 col-md-12 col-sm-12 mobile-view">
+                        <h4>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            {/*-------All Social Icons------------------ */}
+            <div className="container social">
+                <div className="social-handles">
+                    <img src={Facebook} alt="Facebook" className="social-icons my-2"/>
+                </div>
+                <div className="social-handles">
+                    <img src={Github} alt="Github" className="social-icons my-2"/>
+                </div>
+                <div className="social-handles">
+                    <img src={Instagram} alt="Instagram" className="social-icons my-2"/>
+                </div>
+                <div className="social-handles">
+                    <img src={Linkdin} alt="Linkdin" className="social-icons my-2"/>
+                </div>
+                <div className="social-handles">
+                    <img src={Twitter} alt="Twitter" className="social-icons my-2"/>
+                </div>
+            </div>
+        </div>
     )
 }
 
-export default About
+export default AboutUs;
