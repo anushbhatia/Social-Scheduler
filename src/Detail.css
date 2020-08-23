@@ -1,47 +1,59 @@
-
-
-*{
-    font-family:'poppins', sans-serif;
-   
+* {
+  font-family: 'poppins', sans-serif;
 }
 
-
-.maintainers h2{
-    margin-top:2rem;
-    margin-bottom:2rem;
-    text-align:center;
+.contain {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.card{
-    height:15rem;
-    width:15rem;
-    border:none;
+.maintainers h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
-.card-img-top{
-    border-radius:11rem;
 
+.card {
+  height: 15rem;
+  width: 15rem;
+  border: none;
 }
-.card-text{
-    font-size:22px;
+.margin-bottom {
+  margin-bottom: 10rem;
 }
-.card-text label{
-    font-size:18px;
+.card-img-top {
+  border-radius: 11rem;
+}
+.card-text {
+  font-size: 22px;
+}
+.card-text label {
+  font-size: 18px;
+}
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
 }
 
 /* margin above second contianer */
 
-.topmargin{
-    margin-top:15rem;
+.topmargin {
+  margin-top: 15rem;
 }
 /*footer component css*/
-.footerclass{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+.footerclass {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#footer{
-    clear: both;
-    position:relative;
-    bottom:0;
-    margin-top:200px;
+#footer {
+  clear: both;
+  position: relative;
+  bottom: 0;
+  margin-top: 200px;
 }
