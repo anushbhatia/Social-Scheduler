@@ -1,7 +1,5 @@
 import React from 'react';
 import '../Detail.css';
-import boyimage from './assets/images/boyimage.png';
-import girlimage from './assets/images/girlimage.png';
 import ContributerData from '../lib/contributers';
 
 class Detail extends React.Component {
@@ -10,15 +8,14 @@ class Detail extends React.Component {
       <div className="detail container">
         <div className="container maintainers">
           <h2>Project Maintainers</h2>
-          <div className="row"></div>
           <div className="row">
             <div className="col-sm-12 col-md-6" align="center">
               <div className="card text-center">
                 <img
                   className="card-img-top"
-                  src={boyimage}
+                  src="https://avatars0.githubusercontent.com/u/40017559?v=4"
                   alt="Card image cap"
-                ></img>
+                />
                 <div className="card-body">
                   <p className="card-text">
                     <b>Anush Bhatia</b>
@@ -34,7 +31,7 @@ class Detail extends React.Component {
               <div className="card text-center">
                 <img
                   className="card-img-top"
-                  src={boyimage}
+                  src="https://avatars2.githubusercontent.com/u/46641503?v=4"
                   alt="Card image cap"
                 />
                 <div className="card-body">
@@ -53,17 +50,17 @@ class Detail extends React.Component {
         <div class="container topmargin maintainers" id="mentor">
           <h2>Mentors</h2>
 
-          <div className="row  ">
-            <div className="col-sm-12 col-md-4">
+          <div className="row">
+            <div className="col-sm-12 col-md-6" align="center">
               <div className="card text-center">
                 <img
                   className="card-img-top"
-                  src={boyimage}
+                  src="https://avatars3.githubusercontent.com/u/49617450?v=4"
                   alt="Card image cap"
                 />
                 <div className="card-body">
                   <p className="card-text">
-                    <b>xyz</b>
+                    <b>abhu-A-J</b>
                   </p>
                   <p className="card-text">
                     <i>Mentor</i>
@@ -72,33 +69,16 @@ class Detail extends React.Component {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-4">
+            <div className="col-sm-12 col-md-6" align="center">
               <div className="card text-center">
                 <img
                   className="card-img-top"
-                  src={girlimage}
+                  src="https://avatars0.githubusercontent.com/u/36301481?s=400&u=7fd0795b666aadf4eb9c14e1a371689d5c1f6cc9&v=4"
                   alt="Card image cap"
                 />
                 <div className="card-body">
                   <p className="card-text">
-                    <b>xyz</b>
-                  </p>
-                  <p className="card-text">
-                    <i>Mentor</i>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-4">
-              <div className="card text-center">
-                <img
-                  className="card-img-top"
-                  src={boyimage}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <p className="card-text">
-                    <b>abc</b>
+                    <b>ashishnagpal2498</b>
                   </p>
                   <p className="card-text">
                     <i>Mentor</i>
