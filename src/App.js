@@ -8,7 +8,7 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Detail from './components/Detail';
-import Authenticate from './components/Authenticate'
+import Signin from './components/Signin'
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Route path="/about" component={About} />        
         <Route path="/contact" component={Contact} />
         <Route path="/detail" component={Detail} />
-        <Route path="/authenticate" component={Authenticate} />
+        <Route path="/signin" component={Signin} />
         <Route component={Default} />
       </Switch>  
       <Footer/>    

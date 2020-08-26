@@ -1,17 +1,16 @@
 import React,{useState} from 'react';
 import undraw_login from '../components/assets/images/undraw_Login.svg';
-import  '../components/assets/css/Authenticate.css';
+import  '../components/assets/css/Signin.css';
 
-const Authenticate = () => {
+const Signin = () => {
     //const [status, setStatus] = useState("");
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        password:'',
-        phoneNumber: ''
+        password:''
     });
 
-    const {name, email, password,phoneNumber} = formData;
+    const {name, email, password} = formData;
 
     const onChange = (e) => {
         e.persist();
@@ -38,7 +37,7 @@ const Authenticate = () => {
     }
   return (
     <div>
-      <h1 className="text-center">Authenticate</h1>
+      <h1 className="text-center">Signin</h1>
       <div
                 className="container-fluid rounded shadow-lg py-4 px-3 mt-5"
                 style={{width: "70%"}}
@@ -91,18 +90,6 @@ const Authenticate = () => {
                                     value={password}
                                     onChange={e => onChange(e)}
                                     placeholder="Write the subject of the mail here."
-                                    required
-                                />
-                            </div>
-                            <div className="form-group mb-4">
-                                <label className="h5 contact-label">Phone-Number</label>
-                                <input
-                                    type="number"
-                                    className="form-control"
-                                    name="phoneNumber"
-                                    value={phoneNumber}
-                                    onChange={e => onChange(e)}
-                                    placeholder="Eg +91 9999 9999 99"
                                     required
                                 />
                             </div>
@@ -189,4 +176,4 @@ const Authenticate = () => {
   )
 }
 
-export default Authenticate;
+export default Signin;
