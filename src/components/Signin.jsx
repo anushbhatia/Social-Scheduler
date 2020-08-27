@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import undraw_login from '../components/assets/images/undraw_Login.svg';
 import styled from 'styled-components';
 
-const SocialMediaLinks = styled.ul`
+const SocialLinks = styled.ul`
   display: inline;
   list-style:none;
 `;
@@ -106,18 +106,6 @@ const GoogleLink = styled.a`
     }
 
 `;
-
-
-
-// .google{
-//   background-color:white;
-//   color:black;
-//   border:1px solid gray;
-// }
-// .google-li :hover{
-//   background-color:darkgray;
-//   color:white;
-// }
 
 
 const Signin = () => {
@@ -259,7 +247,7 @@ const Signin = () => {
                                 <h2><span>OR</span></h2>
                               </OR>
                               <DisplayForLinks >
-                                <SocialMediaLinks >
+                                <SocialLinks >
                                   <li>
                                     <FacebookLink href="#" className="btn">
                                       <i className="fa fa-facebook fa-fw"></i> Signin with Facebook
@@ -270,7 +258,7 @@ const Signin = () => {
                                       <i className="fa fa-github "></i> Signin with Github
                                     </GithubLink>
                                   </li>
-                                  <li className="linkedin-li">
+                                  <li >
                                     <LinkedinLink href="#" className=" btn">
                                       <LinkedinIcon className="fa fa-linkedin-square " ></LinkedinIcon><LinkedinLinkContent >Signin with Linkedin</LinkedinLinkContent>
                                     </LinkedinLink>
@@ -280,7 +268,7 @@ const Signin = () => {
                                       <i className="fa fa-google "></i> Signin with Google
                                     </GoogleLink>
                                   </li>
-                                </SocialMediaLinks>
+                                </SocialLinks>
                               </DisplayForLinks>
                             </div>
                         </form>
