@@ -1,6 +1,45 @@
 import React,{useState} from 'react';
 import undraw_login from '../components/assets/images/undraw_Login.svg';
 import  '../components/assets/css/Signin.css';
+import styled from 'styled-components';
+
+const SocialMediaLinks = styled.ul`
+  display: inline;
+  list-style:none;
+`;
+
+const Content = styled.div`
+  width: 70%;
+`;
+const Authenticate =styled.button`
+  width:30%;
+`;
+
+const ForgotPasswordButton = styled.button`
+  width:50%;
+  margin-left:5px;
+`;
+
+const OR = styled.div`
+  margin:40px;
+`;
+
+const LinkedinLink = styled.a`
+  justify-content:space-around;
+`;
+
+const LinkedinLinkContent = styled.p`
+  fontsize:18;
+  text-align:center;
+`;
+
+const LinkedinIcon = styled.i`
+  font-size:32px;
+  color:blue;
+  float:left;
+  background-color:white;
+`;
+
 
 const Signin = () => {
     //const [status, setStatus] = useState("");
@@ -38,9 +77,8 @@ const Signin = () => {
   return (
     <div>
       <h1 className="text-center">Signin</h1>
-      <div
+      <Content
                 className="container-fluid rounded shadow-lg py-4 px-3 mt-5"
-                style={{width: "70%"}}
             >
                 <div className="row mt-2">
                     <div className="col-md-6">
@@ -50,6 +88,7 @@ const Signin = () => {
                             className="float-left"
                             style={{width: "100%", height: "100%"}}
                         />
+                        {/* tried to remove this style and replace with styled component image , but stlying disturbed so it was left the same*/}
                     </div>
                     <div className="col-md-6">
                         <form
@@ -113,38 +152,35 @@ const Signin = () => {
                                 )}
                             </div> */}
                             <div className="form-group text-center">
-                              <button
+                              <Authenticate
                                 type="submit"
                                 className="btn btn-outline-success rounded-pill shadow"
-                                style={{width: "30%"}}
                               >
                                 SignIn
-                              </button>
-                              <button
+                              </Authenticate>
+                              <ForgotPasswordButton
                                 type="submit"
                                 className="btn btn-outline-danger rounded-pill shadow"
-                                style={{width: "50%",marginLeft: "5px"}}
                               >
                                 Forgot your password?
-                              </button>
+                              </ForgotPasswordButton>
                             </div>
                             <div className="form-group text-center">
                               <label className="h5 contact-label">New to Social-Scheduler ? ,then Register here</label>
-                              <button
+                              <Authenticate
                                 type="submit"
                                 className="btn btn-outline-success rounded-pill shadow"
-                                style={{width: "30%"}}
                               >
                                 SignUp
-                              </button>
+                              </Authenticate>
                             </div>
                             {/* social media links for login */}
                             <div>
-                              <div style={{margin:"40px"}}>
+                              <OR >
                                 <h2><span>OR</span></h2>
-                              </div>
+                              </OR>
                               <div className="col">
-                                <ul style={{display:"inline",listStyle:"none"} }>
+                                <SocialMediaLinks >
                                   <li>
                                     <a href="#" className="fb btn">
                                       <i className="fa fa-facebook fa-fw"></i> Login with Facebook
@@ -156,22 +192,22 @@ const Signin = () => {
                                     </a>
                                   </li>
                                   <li className="linkedin-li">
-                                    <a href="#" className="linkedin btn" style={{justifyContent:"space-around"}}>
-                                      <i className="fa fa-linkedin-square " style={{fontSize:"32px",color:"blue",float:"left",backgroundColor:"white"}}></i><p style={{fontSize:18,textAlign:"center",textAlign:"center"}}>Login with Linkedin</p>
-                                    </a>
+                                    <LinkedinLink href="#" className="linkedin btn">
+                                      <LinkedinIcon className="fa fa-linkedin-square " ></LinkedinIcon><LinkedinLinkContent >Login with Linkedin</LinkedinLinkContent>
+                                    </LinkedinLink>
                                   </li>
                                   <li className="google-li">
                                     <a href="#" className="google btn">
                                       <i className="fa fa-google "></i> Login with Google
                                     </a>
                                   </li>
-                                </ul>
+                                </SocialMediaLinks>
                               </div>
                             </div>
                         </form>
                     </div>
                 </div>
-            </div>
+            </Content>
     </div>
   )
 }

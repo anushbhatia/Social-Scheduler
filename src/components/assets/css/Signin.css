@@ -38,8 +38,11 @@ h2 span {
   background-color:lightblue;
   color:blue;
 }
-.linkedin-li :hover{
-  color:white;
+.linkedin-li p:hover{
+  color:black;
+}
+.linkedin-li i:hover{
+  color:black
 }
 .google{
   background-color:white;
