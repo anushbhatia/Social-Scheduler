@@ -125,7 +125,7 @@ const Contact = styled.div`
 `;
 const jumbotron = {
   backgroundImage:
-    'url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQMh9RvNFeVElPAWlwUh1Bv89u55-k4GzHnNg&usqp=CAU)',
+    'url(https://image.freepik.com/free-vector/blue-social-media-background_1017-7008.jpg)',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
   backgroundSize: 'cover',
