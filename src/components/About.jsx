@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 //icons
 import instagramLogo from './assets/images/instagram.svg';
 import whatsappLogo from './assets/images/whatsapp.svg';
@@ -10,7 +11,7 @@ import aboutSvg from './assets/images/about.svg';
 
 import { device } from '../utils/screenSizes';
 
-import { Jumbotron, Container, Card, Button } from 'react-bootstrap';
+import { Jumbotron, Container, Card, Button, Row, Col } from 'react-bootstrap';
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -31,42 +32,51 @@ const BackgroundImage = styled.img`
 `;
 
 const Content = styled.div`
-  align-self: center;
-  display: flex;
+  background-image: url(https://www.xmple.com/wallpaper/linear-white-gradient-highlight-blue-1920x1080-c2-ffffff-e0ffff-l-50-a-300-f-21.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-  width: 90%;
-  margin: 30px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  padding: 2em;
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  // box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 4em;
   @media ${device.mobileS} {
     flex-direction: column;
+    margin: 0px;
+    padding: 2em 20px;
+    text-align: left;
   }
   @media ${device.laptop} {
     flex-direction: row;
+    padding: 50px;
+    margin: 0px;
   }
 `;
 
 const Text = styled.div`
-  font-size: 20px;
   margin-right: 1em;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: light;
   @media ${device.mobileS} {
     flex-direction: column;
+    font-size: 15px;
   }
   @media ${device.laptop} {
     width: 60%;
     flex-direction: row;
+    font-size: 18px;
   }
 `;
 const Logos = styled.div`
   display: flex;
-
+  margin: 0px;
   justify-content: stretch;
   align-self: center;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 
-  padding: 2em;
+  padding: 1em;
   /* height: 50em; */
 `;
 const Heading = styled.div`
@@ -74,7 +84,8 @@ const Heading = styled.div`
   color: #15669c !important
   text-align: center;
   margin-right: 1em;
-  font-family: Georgia, 'Times New Roman', serif !important;
+  font-family: 'Poppins', sans-serif; 
+  padding-bottom:20px;
   @media ${device.mobileS} {
     flex-direction: column;
     text-align: left;
@@ -88,8 +99,9 @@ const Heading = styled.div`
 `;
 const HeaderMain = styled.div`
   text-align: center;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
-  color: black;
+  color: white;
   text-shadow: 1px 1px rgb(25, 51, 82);
   @media ${device.mobileS} {
     flex-direction: column;
@@ -106,14 +118,23 @@ const Icon = styled.div`
   height: auto;
   margin: 0 2em;
 `;
+
+const Contact = styled.div`
+  align-self: center;
+  margin-top: 30px;
+`;
 const jumbotron = {
   backgroundImage:
-    'url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg)',
+    'url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQMh9RvNFeVElPAWlwUh1Bv89u55-k4GzHnNg&usqp=CAU)',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
   backgroundSize: 'cover',
+  margin: '0px',
 };
 function About() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <Wrapper>
       <Jumbotron style={jumbotron}>
@@ -121,84 +142,84 @@ function About() {
           <HeaderMain>
             Lorem Ipsum is simply dummy text of the printing .
           </HeaderMain>
-          <p style={{ color: 'grey', fontSize: '20px', margin: '40px' }}>
+          <p style={{ color: 'grey', fontSize: '20px', margin: '50px' }}>
             We automatically send invite to all of your social media like
             LinkedIn, Facebook, email, WhatsApp, Instagram as soon as he
             finishes filling the form.
           </p>
         </Container>
       </Jumbotron>
-      <Content>
-        <BackgroundImage src={aboutSvg} />
+
+      <Content data-aos="fade-up">
+        {/* <BackgroundImage src={aboutSvg} /> */}
         <Text>
           <Heading>Who are we ?</Heading>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type men book. It has survived not only five
-          centuries Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to make a type men book. It has survived not
-          only five centuries
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type men book.
+          </p>
+          <p>
+            It has survived not only five centuries Lorem Ipsum is simply dummy
+            text of the printing and typesetting industry. Lorem Ipsum has been
+            the industry's standard dummy text ever since the 1500s, when an
+            unknown printer took a galley of type and scrambled it to make a
+            type men book. It has survived not only five centuries
+          </p>
         </Text>
       </Content>
-      <Content>
+      <Content data-aos="fade-up">
+        {/* <BackgroundImage src={aboutSvg} /> */}
         <Text>
           <Heading>What we do ?</Heading>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type men book. It has survived not only five
-          centuries Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to make a type men book. It has survived not
-          only five centuries
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type men book.
+          </p>
+          <p>
+            It has survived not only five centuries Lorem Ipsum is simply dummy
+            text of the printing and typesetting industry. Lorem Ipsum has been
+            the industry's standard dummy text ever since the 1500s, when an
+            unknown printer took a galley of type and scrambled it to make a
+            type men book. It has survived not only five centuries
+          </p>
         </Text>
-        <BackgroundImage src={aboutSvg} />
       </Content>
-      <Content>
-        <BackgroundImage src={aboutSvg} />
+
+      <Content data-aos="fade-up">
+        {/* <BackgroundImage src={aboutSvg} /> */}
         <Text>
           <Heading> Our Objective</Heading>
           <ul>
-            <li>
-              {' '}
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry
-            </li>
-            <li>
-              {' '}
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry
-            </li>
-            <li>
-              {' '}
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry
-            </li>
-            <li>
-              {' '}
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry
-            </li>
+            <li> Regular Updates</li>
+            <li> Fast and reliable</li>
+            <li> Prior information to Deadline</li>
           </ul>
         </Text>
       </Content>
       <br></br>
 
-      <Logos>
-        <Icon>
-          <img src={instagramLogo} alt="Instagram Logo" />
-        </Icon>
-        <Icon>
-          <img src={whatsappLogo} alt="WhatsApp Logo" />
-        </Icon>
-        <Icon>
-          <img src={githubLogo} alt="GitHub Logo" />
-        </Icon>
-      </Logos>
+      <Contact>
+        <Heading
+          style={{ margin: '0px', fontSize: '20px', textAlign: 'center' }}
+        >
+          Connect with us
+        </Heading>
+        <Logos>
+          <Icon>
+            <img src={instagramLogo} alt="Instagram Logo" />
+          </Icon>
+          <Icon>
+            <img src={whatsappLogo} alt="WhatsApp Logo" />
+          </Icon>
+          <Icon>
+            <img src={githubLogo} alt="GitHub Logo" />
+          </Icon>
+        </Logos>
+      </Contact>
     </Wrapper>
   );
 }
