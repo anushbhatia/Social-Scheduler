@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import undraw_login from '../components/assets/images/undraw_Login.svg';
-import  '../components/assets/css/Signin.css';
 import styled from 'styled-components';
 
 const SocialMediaLinks = styled.ul`
@@ -20,12 +19,27 @@ const ForgotPasswordButton = styled.button`
   margin-left:5px;
 `;
 
+
 const OR = styled.div`
   margin:40px;
+  h2 { 
+    width:100%; 
+    text-align:center; 
+    border-bottom: 5px solid gray; 
+    line-height:0.1em; 
+    margin:10px 0 20px;
+  } 
+  h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+  }
+
 `;
 
 const LinkedinLink = styled.a`
   justify-content:space-around;
+  background-color:lightblue;
+  color:blue;
 `;
 
 const LinkedinLinkContent = styled.p`
@@ -38,7 +52,72 @@ const LinkedinIcon = styled.i`
   color:blue;
   float:left;
   background-color:white;
+  &:hover{
+    color:black
+  }
 `;
+
+const FacebookLink = styled.a`
+  background-color: #3B5998;
+  color: white;
+`;
+
+const GithubLink =styled.a`
+  background-color:black;
+  color:white;
+
+  &:hover{
+    background-color:darkgray;
+  }
+`;
+
+
+const DisplayForLinks = styled.div`
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+  justify-content: space-around;
+
+  li{
+    margin:10px;
+  }
+  a{
+      width: 90%;
+  }
+
+  @media screen and (max-width: 650px) {
+    .col {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+`;
+
+const GoogleLink = styled.a`
+  background-color:white;
+  color:black;
+  border:1px solid gray;
+
+  &:hover{
+      background-color:darkgray;
+      color:white;
+    }
+
+`;
+
+
+
+// .google{
+//   background-color:white;
+//   color:black;
+//   border:1px solid gray;
+// }
+// .google-li :hover{
+//   background-color:darkgray;
+//   color:white;
+// }
 
 
 const Signin = () => {
@@ -179,30 +258,30 @@ const Signin = () => {
                               <OR >
                                 <h2><span>OR</span></h2>
                               </OR>
-                              <div className="col">
+                              <DisplayForLinks >
                                 <SocialMediaLinks >
                                   <li>
-                                    <a href="#" className="fb btn">
-                                      <i className="fa fa-facebook fa-fw"></i> Login with Facebook
-                                    </a>
+                                    <FacebookLink href="#" className="btn">
+                                      <i className="fa fa-facebook fa-fw"></i> Signin with Facebook
+                                    </FacebookLink>
                                   </li>
-                                  <li className="github-li">
-                                    <a href="#" className="github btn">
-                                      <i className="fa fa-github "></i> Login with Github
-                                    </a>
+                                  <li >
+                                    <GithubLink href="#" className=" btn">
+                                      <i className="fa fa-github "></i> Signin with Github
+                                    </GithubLink>
                                   </li>
                                   <li className="linkedin-li">
-                                    <LinkedinLink href="#" className="linkedin btn">
-                                      <LinkedinIcon className="fa fa-linkedin-square " ></LinkedinIcon><LinkedinLinkContent >Login with Linkedin</LinkedinLinkContent>
+                                    <LinkedinLink href="#" className=" btn">
+                                      <LinkedinIcon className="fa fa-linkedin-square " ></LinkedinIcon><LinkedinLinkContent >Signin with Linkedin</LinkedinLinkContent>
                                     </LinkedinLink>
                                   </li>
-                                  <li className="google-li">
-                                    <a href="#" className="google btn">
-                                      <i className="fa fa-google "></i> Login with Google
-                                    </a>
+                                  <li >
+                                    <GoogleLink href="#" className=" btn">
+                                      <i className="fa fa-google "></i> Signin with Google
+                                    </GoogleLink>
                                   </li>
                                 </SocialMediaLinks>
-                              </div>
+                              </DisplayForLinks>
                             </div>
                         </form>
                     </div>
