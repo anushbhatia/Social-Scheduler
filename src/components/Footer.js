@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 import '../Detail.css'
 function Footer(){
 return(
@@ -8,29 +10,28 @@ return(
 
             <div className="container text-center text-md-left">
 
-  
+
                  <div className="row">
 
 
                      <div className="col-md-6  ">
 
-    
+
                          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ">Social Schedular</h5>
                          <p >A project to automatically send invite to all of your social media like LinkedIn, Facebook, email,
                               WhatsApp, Instagram as soon as he finishes filling the form.</p>
                      </div>
                     <div class="col-md-6 ">
                          <ul className="list-unstyled list-inline text-center py-2">
+                            <Link to="/register">
                             <li className="list-inline-item">
-                            <h5 className="mb-1">Register for free</h5>
+                            <a href="#" className="btn btn-danger btn-rounded">Contact Us!</a>
                             </li>
-                            <li className="list-inline-item">
-                            <a href="#" className="btn btn-danger btn-rounded">Sign up!</a>
-                            </li>
+                            </Link>
                          </ul>
                     </div>
 
-    
+
                 </div>
 
             </div>
@@ -38,8 +39,9 @@ return(
 
 
         <ul class="list-unstyled list-inline text-center">
+
             <li className="list-inline-item">
-             <a className="btn-floating btn-fb mx-1">
+             <a  className="btn-floating btn-fb mx-1">
            <i className="fa fa-facebook-f fa-3x"></i>
              </a>
             </li>
@@ -49,12 +51,12 @@ return(
                  </a>
              </li>
             <li className="list-inline-item">
-              <a className="fb-ic">
+              <a className="fb-ic" href="https://github.com/anushbhatia/Social-Scheduler" >
                 <i  className="fa fa-github fa-3x"></i>
                  </a>
              </li>
-  
-  
+
+
         </ul>
 
          <div className="footer-copyright text-center py-3">© 2020 Copyright:

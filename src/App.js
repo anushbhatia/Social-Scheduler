@@ -8,6 +8,7 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Detail from './components/Detail';
+import UserRegister from './components/UserRegistration';
 
 
 
@@ -16,14 +17,16 @@ function App() {
     <>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={LandingPage} />        
-        <Route path="/about" component={About} />        
+
+        <Route exact path="/" component={LandingPage} />
+        <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/detail" component={Detail} />
+        <Route path="/register" component={UserRegister} />
 
         <Route component={Default} />
-      </Switch>  
-      <Footer/>    
+      </Switch>
+      <Footer/>
     </>
   )
 }
