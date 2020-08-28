@@ -36,11 +36,7 @@ const OR = styled.div`
 
 `;
 
-const LinkedinLink = styled.a`
-  justify-content:space-around;
-  background-color:lightblue;
-  color:blue;
-`;
+
 
 const LinkedinLinkContent = styled.p`
   fontsize:18;
@@ -57,19 +53,6 @@ const LinkedinIcon = styled.i`
   }
 `;
 
-const FacebookLink = styled.a`
-  background-color: #3B5998;
-  color: white;
-`;
-
-const GithubLink =styled.a`
-  background-color:black;
-  color:white;
-
-  &:hover{
-    background-color:darkgray;
-  }
-`;
 
 
 const DisplayForLinks = styled.div`
@@ -95,15 +78,17 @@ const DisplayForLinks = styled.div`
   }
 `;
 
-const GoogleLink = styled.a`
-  background-color:white;
-  color:black;
-  border:1px solid gray;
+
+
+const SocialMediaLink = styled.a`
+  background-color:${props => props.bgColor} ;
+  color: ${props => props.color};
+  border : ${props => props.border};
 
   &:hover{
-      background-color:darkgray;
-      color:white;
-    }
+    background-color:${props => props.hoverBgColor};
+    color:${props => props.hoverColor};
+  }
 
 `;
 
@@ -249,24 +234,24 @@ const Signin = () => {
                               <DisplayForLinks >
                                 <SocialLinks >
                                   <li>
-                                    <FacebookLink href="#" className="btn">
+                                    <SocialMediaLink  color ="white" bgColor="#3B5998" href="#" className="btn">
                                       <i className="fa fa-facebook fa-fw"></i> Signin with Facebook
-                                    </FacebookLink>
+                                    </SocialMediaLink>
                                   </li>
                                   <li >
-                                    <GithubLink href="#" className=" btn">
+                                    <SocialMediaLink bgColor="black" color="white" hoverBgColor="darkgrey" href="#" className=" btn">
                                       <i className="fa fa-github "></i> Signin with Github
-                                    </GithubLink>
+                                    </SocialMediaLink>
                                   </li>
                                   <li >
-                                    <LinkedinLink href="#" className=" btn">
+                                    <SocialMediaLink color="blue" bgColor="lightblue" href="#" className=" btn">
                                       <LinkedinIcon className="fa fa-linkedin-square " ></LinkedinIcon><LinkedinLinkContent >Signin with Linkedin</LinkedinLinkContent>
-                                    </LinkedinLink>
+                                    </SocialMediaLink >
                                   </li>
                                   <li >
-                                    <GoogleLink href="#" className=" btn">
+                                    <SocialMediaLink color="black" bgColor="white" border="1px solid gray" hoverBgColor="darkgray" href="#" className=" btn">
                                       <i className="fa fa-google "></i> Signin with Google
-                                    </GoogleLink>
+                                    </SocialMediaLink>
                                   </li>
                                 </SocialLinks>
                               </DisplayForLinks>
