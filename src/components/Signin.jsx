@@ -92,6 +92,11 @@ const SocialMediaLink = styled.a`
 
 `;
 
+const Image = styled.img`
+  width:100%;
+  height:100%;
+`;
+
 
 const Signin = () => {
     //const [status, setStatus] = useState("");
@@ -134,13 +139,11 @@ const Signin = () => {
             >
                 <div className="row mt-2">
                     <div className="col-md-6">
-                        <img
+                        <Image
                             src={undraw_login}
                             alt="undraw_login"
                             className="float-left"
-                            style={{width: "100%", height: "100%"}}
                         />
-                        {/* tried to remove this style and replace with styled component image , but stlying disturbed so it was left the same*/}
                     </div>
                     <div className="col-md-6">
                         <form
