@@ -10,17 +10,14 @@ const SocialLinks = styled.ul`
 const Content = styled.div`
   width: 70%;
 `;
-const Authenticate =styled.button`
-  width:30%;
-`;
 
-const ForgotPasswordButton = styled.button`
-  width:50%;
-  margin-left:5px;
+const Button = styled.button`
+  width:${props => props.width};
+  margin-left:${props=>props.marginLeft};
 `;
 
 
-const OR = styled.div`
+const Seperator = styled.div`
   margin:40px;
   h2 { 
     width:100%; 
@@ -36,8 +33,6 @@ const OR = styled.div`
 
 `;
 
-
-
 const LinkedinLinkContent = styled.p`
   fontsize:18;
   text-align:center;
@@ -52,8 +47,6 @@ const LinkedinIcon = styled.i`
     color:black
   }
 `;
-
-
 
 const DisplayForLinks = styled.div`
   text-align: center;
@@ -77,8 +70,6 @@ const DisplayForLinks = styled.div`
     }
   }
 `;
-
-
 
 const SocialMediaLink = styled.a`
   background-color:${props => props.bgColor} ;
@@ -207,33 +198,37 @@ const Signin = () => {
                                 )}
                             </div> */}
                             <div className="form-group text-center">
-                              <Authenticate
+                              <Button
                                 type="submit"
                                 className="btn btn-outline-success rounded-pill shadow"
+                                width="30%"
                               >
                                 SignIn
-                              </Authenticate>
-                              <ForgotPasswordButton
+                              </Button>
+                              <Button
                                 type="submit"
                                 className="btn btn-outline-danger rounded-pill shadow"
+                                width="60%"
+                                marginLeft="5px"
                               >
                                 Forgot your password?
-                              </ForgotPasswordButton>
+                              </Button>
                             </div>
                             <div className="form-group text-center">
                               <label className="h5 contact-label">New to Social-Scheduler ? ,then Register here</label>
-                              <Authenticate
+                              <Button
                                 type="submit"
                                 className="btn btn-outline-success rounded-pill shadow"
+                                width="30%"
                               >
                                 SignUp
-                              </Authenticate>
+                              </Button>
                             </div>
                             {/* social media links for login */}
                             <div>
-                              <OR >
+                              <Seperator >
                                 <h2><span>OR</span></h2>
-                              </OR>
+                              </Seperator>
                               <DisplayForLinks >
                                 <SocialLinks >
                                   <li>
