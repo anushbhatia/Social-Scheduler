@@ -106,10 +106,10 @@ const HeaderMain = styled.div`
   @media ${device.mobileS} {
     flex-direction: column;
     text-align: center;
-    font-size: 35px;
+    font-size: 37px;
   }
   @media ${device.laptop} {
-    font-size: 55px;
+    font-size: 60px;
     flex-direction: row;
   }
 `;
@@ -142,16 +142,10 @@ function About() {
           <HeaderMain>
             Lorem Ipsum is simply dummy text of the printing .
           </HeaderMain>
-          <p style={{ color: 'grey', fontSize: '20px', margin: '50px' }}>
-            We automatically send invite to all of your social media like
-            LinkedIn, Facebook, email, WhatsApp, Instagram as soon as he
-            finishes filling the form.
-          </p>
         </Container>
       </Jumbotron>
 
       <Content data-aos="fade-up">
-        {/* <BackgroundImage src={aboutSvg} /> */}
         <Text>
           <Heading>Who are we ?</Heading>
           <p>
@@ -170,7 +164,6 @@ function About() {
         </Text>
       </Content>
       <Content data-aos="fade-up">
-        {/* <BackgroundImage src={aboutSvg} /> */}
         <Text>
           <Heading>What we do ?</Heading>
           <p>
@@ -190,7 +183,6 @@ function About() {
       </Content>
 
       <Content data-aos="fade-up">
-        {/* <BackgroundImage src={aboutSvg} /> */}
         <Text>
           <Heading> Our Objective</Heading>
           <ul>
