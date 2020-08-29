@@ -2,10 +2,6 @@ import React,{useState} from 'react';
 import undraw_login from '../components/assets/images/undraw_Login.svg';
 import styled from 'styled-components';
 
-const SocialLinks = styled.ul`
-  display: inline;
-  list-style:none;
-`;
 
 const Content = styled.div`
   width: 70%;
@@ -49,6 +45,8 @@ const LinkedinIcon = styled.i`
 `;
 
 const DisplayForLinks = styled.div`
+  display: inline;
+  list-style:none;
   text-align: center;
   width: 100%;
   margin: auto;
@@ -71,7 +69,7 @@ const DisplayForLinks = styled.div`
   }
 `;
 
-const SocialMediaLink = styled.a`
+const AuthLink = styled.a`
   background-color:${props => props.bgColor} ;
   color: ${props => props.color};
   border : ${props => props.border};
@@ -230,28 +228,26 @@ const Signin = () => {
                                 <h2><span>OR</span></h2>
                               </Seperator>
                               <DisplayForLinks >
-                                <SocialLinks >
                                   <li>
-                                    <SocialMediaLink  color ="white" bgColor="#3B5998" href="#" className="btn">
+                                    <AuthLink  color ="white" bgColor="#3B5998" href="#" className="btn">
                                       <i className="fa fa-facebook fa-fw"></i> Signin with Facebook
-                                    </SocialMediaLink>
+                                    </AuthLink>
                                   </li>
                                   <li >
-                                    <SocialMediaLink bgColor="black" color="white" hoverBgColor="darkgrey" href="#" className=" btn">
+                                    <AuthLink bgColor="black" color="white" hoverBgColor="darkgrey" href="#" className=" btn">
                                       <i className="fa fa-github "></i> Signin with Github
-                                    </SocialMediaLink>
+                                    </AuthLink>
                                   </li>
                                   <li >
-                                    <SocialMediaLink color="blue" bgColor="lightblue" href="#" className=" btn">
+                                    <AuthLink color="blue" bgColor="lightblue" href="#" className=" btn">
                                       <LinkedinIcon className="fa fa-linkedin-square " ></LinkedinIcon><LinkedinLinkContent >Signin with Linkedin</LinkedinLinkContent>
-                                    </SocialMediaLink >
+                                    </AuthLink >
                                   </li>
                                   <li >
-                                    <SocialMediaLink color="black" bgColor="white" border="1px solid gray" hoverBgColor="darkgray" href="#" className=" btn">
+                                    <AuthLink color="black" bgColor="white" border="1px solid gray" hoverBgColor="darkgray" href="#" className=" btn">
                                       <i className="fa fa-google "></i> Signin with Google
-                                    </SocialMediaLink>
+                                    </AuthLink>
                                   </li>
-                                </SocialLinks>
                               </DisplayForLinks>
                             </div>
                         </form>
