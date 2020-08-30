@@ -29,19 +29,6 @@ const Seperator = styled.div`
 
 `;
 
-// const LinkedinLinkContent = styled.p`
-//   text-align:center;
-// `;
-
-// const LinkedinIcon = styled.i`
-//   font-size:32px;
-//   color:blue;
-//   float:left;
-//   background-color:white;
-//   &:hover{
-//     color:black
-//   }
-// `;
 
 const DisplayForLinks = styled.div`
   display: inline;
