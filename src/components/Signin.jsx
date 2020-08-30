@@ -29,20 +29,19 @@ const Seperator = styled.div`
 
 `;
 
-const LinkedinLinkContent = styled.p`
-  fontsize:18;
-  text-align:center;
-`;
+// const LinkedinLinkContent = styled.p`
+//   text-align:center;
+// `;
 
-const LinkedinIcon = styled.i`
-  font-size:32px;
-  color:blue;
-  float:left;
-  background-color:white;
-  &:hover{
-    color:black
-  }
-`;
+// const LinkedinIcon = styled.i`
+//   font-size:32px;
+//   color:blue;
+//   float:left;
+//   background-color:white;
+//   &:hover{
+//     color:black
+//   }
+// `;
 
 const DisplayForLinks = styled.div`
   display: inline;
@@ -77,6 +76,22 @@ const AuthLink = styled.a`
   &:hover{
     background-color:${props => props.hoverBgColor};
     color:${props => props.hoverColor};
+  }
+  i{
+    font-size:${props => props.IconSize};
+    color:${props => props.IconColor};
+    float:${props => props.IconFloat};
+    background-color:${props => props.IconBgColor};
+  }
+  i &:hover{ 
+    color:${props => props.hoverIconColor};
+  }
+  p{
+    color:${props => props.contentColor};
+    text-align:${props => props.contentTextAlign};
+  }
+  p &:hover{
+    color:${props => props.hoverContentColor};
   }
 
 `;
@@ -229,22 +244,40 @@ const Signin = () => {
                               </Seperator>
                               <DisplayForLinks >
                                   <li>
-                                    <AuthLink  color ="white" bgColor="#3B5998" href="#" className="btn">
+                                    <AuthLink  
+                                      color ="white" bgColor="#3B5998" 
+                                      href="#" className="btn"
+                                    >
                                       <i className="fa fa-facebook fa-fw"></i> Signin with Facebook
                                     </AuthLink>
                                   </li>
                                   <li >
-                                    <AuthLink bgColor="black" color="white" hoverBgColor="darkgrey" href="#" className=" btn">
+                                    <AuthLink 
+                                      bgColor="black" color="white" 
+                                      hoverBgColor="darkgrey" href="#" 
+                                      className=" btn"
+                                    >
                                       <i className="fa fa-github "></i> Signin with Github
                                     </AuthLink>
                                   </li>
                                   <li >
-                                    <AuthLink color="blue" bgColor="lightblue" href="#" className=" btn">
-                                      <LinkedinIcon className="fa fa-linkedin-square " ></LinkedinIcon><LinkedinLinkContent >Signin with Linkedin</LinkedinLinkContent>
+                                    <AuthLink 
+                                      color="blue" bgColor="lightblue" 
+                                      href="#" className=" btn" 
+                                      contentTextAlign="center" IconSize="32px"
+                                      IconColor="blue" IconFloat="left" 
+                                      IconBgColor="white" hoverIconColor="black"  
+                                    >
+                                      <i className="fa fa-linkedin-square " /><p >Signin with Linkedin</p>
                                     </AuthLink >
                                   </li>
                                   <li >
-                                    <AuthLink color="black" bgColor="white" border="1px solid gray" hoverBgColor="darkgray" href="#" className=" btn">
+                                    <AuthLink 
+                                      color="white" bgColor="#FE3E1B" 
+                                      border="1px solid gray" hoverBgColor="#DE3D1F" 
+                                      href="#" className=" btn" 
+                                      IconColor="white" hoverIconColor="black"
+                                    >
                                       <i className="fa fa-google "></i> Signin with Google
                                     </AuthLink>
                                   </li>
