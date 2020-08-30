@@ -13,7 +13,7 @@ const Button = styled.button`
 `;
 
 
-const Seperator = styled.div`
+const AuthLinkWrapper = styled.div`
   margin:40px;
   h2 { 
     width:100%; 
@@ -59,6 +59,7 @@ const AuthLink = styled.a`
   background-color:${props => props.bgColor} ;
   color: ${props => props.color};
   border : ${props => props.border};
+  text-align:${props => props.TextAlign};
 
   &:hover{
     background-color:${props => props.hoverBgColor};
@@ -72,13 +73,6 @@ const AuthLink = styled.a`
   }
   i &:hover{ 
     color:${props => props.hoverIconColor};
-  }
-  p{
-    color:${props => props.contentColor};
-    text-align:${props => props.contentTextAlign};
-  }
-  p &:hover{
-    color:${props => props.hoverContentColor};
   }
 
 `;
@@ -226,9 +220,9 @@ const Signin = () => {
                             </div>
                             {/* social media links for login */}
                             <div>
-                              <Seperator >
+                              <AuthLinkWrapper >
                                 <h2><span>OR</span></h2>
-                              </Seperator>
+                              </AuthLinkWrapper>
                               <DisplayForLinks >
                                   <li>
                                     <AuthLink  
@@ -251,11 +245,11 @@ const Signin = () => {
                                     <AuthLink 
                                       color="blue" bgColor="lightblue" 
                                       href="#" className=" btn" 
-                                      contentTextAlign="center" IconSize="32px"
+                                      TextAlign="center" IconSize="32px"
                                       IconColor="blue" IconFloat="left" 
                                       IconBgColor="white" hoverIconColor="black"  
                                     >
-                                      <i className="fa fa-linkedin-square " /><p >Signin with Linkedin</p>
+                                      <i className="fa fa-linkedin-square " />Signin with Linkedin
                                     </AuthLink >
                                   </li>
                                   <li >
