@@ -58,7 +58,6 @@ const DisplayForLinks = styled.div`
 const AuthLink = styled.a`
   background-color:${props => props.bgColor} ;
   color: ${props => props.color};
-  border : ${props => props.border};
   text-align:${props => props.TextAlign};
 
   &:hover{
@@ -227,37 +226,39 @@ const Signin = () => {
                                   <li>
                                     <AuthLink  
                                       color ="white" bgColor="#3B5998" 
-                                      href="#" className="btn"
+                                      href="#" hoverColor="white"
+                                      hoverBgColor="#203797" className="btn"
                                     >
                                       <i className="fa fa-facebook fa-fw"></i> Signin with Facebook
                                     </AuthLink>
                                   </li>
                                   <li >
                                     <AuthLink 
-                                      bgColor="black" color="white" 
-                                      hoverBgColor="darkgrey" href="#" 
-                                      className=" btn"
+                                      bgColor="#2D2C2C" color="white" 
+                                      hoverBgColor="#4A4A4C" href="#" 
+                                      hoverColor="white"    className=" btn"
                                     >
                                       <i className="fa fa-github "></i> Signin with Github
                                     </AuthLink>
                                   </li>
                                   <li >
                                     <AuthLink 
-                                      color="blue" bgColor="lightblue" 
+                                      color="white" bgColor="#0e76a8" 
                                       href="#" className=" btn" 
                                       TextAlign="center" IconSize="32px"
-                                      IconColor="blue" IconFloat="left" 
-                                      IconBgColor="white" hoverIconColor="black"  
+                                      IconColor="#0e76a8" IconFloat="left" 
+                                      IconBgColor="white" 
+                                      hoverColor="white" hoverBgColor="#3168E5"
                                     >
                                       <i className="fa fa-linkedin-square " />Signin with Linkedin
                                     </AuthLink >
                                   </li>
                                   <li >
                                     <AuthLink 
-                                      color="white" bgColor="#FE3E1B" 
-                                      border="1px solid gray" hoverBgColor="#DE3D1F" 
-                                      href="#" className=" btn" 
-                                      IconColor="white" hoverIconColor="black"
+                                      color="white" bgColor="#DE3D1F"
+                                      hoverBgColor="#AB2B11"  href="#" 
+                                      className=" btn"  
+                                      IconColor="white" hoverColor="white"
                                     >
                                       <i className="fa fa-google "></i> Signin with Google
                                     </AuthLink>
