@@ -67,7 +67,7 @@ const AuthLink = styled.a`
   i{
     font-size:${props => props.IconSize};
     color:${props => props.IconColor};
-    float:${props => props.IconFloat};
+    margin-right:${props => props.marginRight};
     background-color:${props => props.IconBgColor};
   }
   i &:hover{ 
@@ -245,12 +245,12 @@ const Signin = () => {
                                     <AuthLink 
                                       color="white" bgColor="#0e76a8" 
                                       href="#" className=" btn" 
-                                      TextAlign="center" IconSize="32px"
-                                      IconColor="#0e76a8" IconFloat="left" 
-                                      IconBgColor="white" 
+                                      TextAlign="center" IconSize="18px"
+                                      IconColor="white" marginRight="5px"
+                                      IconBgColor="#0e76a8"
                                       hoverColor="white" hoverBgColor="#3168E5"
                                     >
-                                      <i className="fa fa-linkedin-square " />Signin with Linkedin
+                                      <i className="fa fa-linkedin" />Signin with Linkedin
                                     </AuthLink >
                                   </li>
                                   <li >
