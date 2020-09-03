@@ -2,7 +2,6 @@ import React,{useState} from 'react';
 import undraw_login from '../components/assets/images/undraw_Login.svg';
 import styled from 'styled-components';
 
-
 const Content = styled.div`
   width: 70%;
 `;
@@ -11,7 +10,6 @@ const Button = styled.button`
   width:${props => props.width};
   margin-left:${props=>props.marginLeft};
 `;
-
 
 const AuthLinkWrapper = styled.div`
   margin:40px;
@@ -29,7 +27,6 @@ const AuthLinkWrapper = styled.div`
 
 `;
 
-
 const DisplayForLinks = styled.div`
   display: inline;
   list-style:none;
@@ -39,14 +36,12 @@ const DisplayForLinks = styled.div`
   padding: 0 50px;
   margin-top: 6px;
   justify-content: space-around;
-
   li{
     margin:10px;
   }
   a{
       width: 90%;
   }
-
   @media screen and (max-width: 650px) {
     .col {
       width: 100%;
@@ -58,22 +53,18 @@ const DisplayForLinks = styled.div`
 const AuthLink = styled.a`
   background-color:${props => props.bgColor} ;
   color: ${props => props.color};
-  text-align:${props => props.TextAlign};
-
   &:hover{
     background-color:${props => props.hoverBgColor};
     color:${props => props.hoverColor};
   }
   i{
-    font-size:${props => props.IconSize};
     color:${props => props.IconColor};
-    margin-right:${props => props.marginRight};
+    padding-right:${props => props.paddingRight};
     background-color:${props => props.IconBgColor};
   }
   i &:hover{ 
     color:${props => props.hoverIconColor};
   }
-
 `;
 
 const Image = styled.img`
@@ -228,8 +219,9 @@ const Signin = () => {
                                       color ="white" bgColor="#3B5998" 
                                       href="#" hoverColor="white"
                                       hoverBgColor="#203797" className="btn"
+                                      paddingRight="5px"
                                     >
-                                      <i className="fa fa-facebook fa-fw"></i> Signin with Facebook
+                                      <i className="fa fa-facebook fa-fw"></i>Signin with Facebook
                                     </AuthLink>
                                   </li>
                                   <li >
@@ -237,30 +229,30 @@ const Signin = () => {
                                       bgColor="#2D2C2C" color="white" 
                                       hoverBgColor="#4A4A4C" href="#" 
                                       hoverColor="white"    className=" btn"
+                                      paddingRight="5px"
                                     >
-                                      <i className="fa fa-github "></i> Signin with Github
+                                      <i className="fa fa-github "></i>Signin with Github
                                     </AuthLink>
                                   </li>
                                   <li >
                                     <AuthLink 
                                       color="white" bgColor="#0e76a8" 
                                       href="#" className=" btn" 
-                                      TextAlign="center" IconSize="18px"
-                                      IconColor="white" marginRight="5px"
+                                      IconColor="white" paddingRight="5px"
                                       IconBgColor="#0e76a8"
                                       hoverColor="white" hoverBgColor="#3168E5"
                                     >
-                                      <i className="fa fa-linkedin" />Signin with Linkedin
+                                      <i className="fa fa-linkedin"></i>Signin with Linkedin
                                     </AuthLink >
                                   </li>
                                   <li >
                                     <AuthLink 
                                       color="white" bgColor="#DE3D1F"
                                       hoverBgColor="#AB2B11"  href="#" 
-                                      className=" btn"  
+                                      className=" btn"  paddingRight="5px"
                                       IconColor="white" hoverColor="white"
                                     >
-                                      <i className="fa fa-google "></i> Signin with Google
+                                      <i className="fa fa-google "></i>Signin with Google
                                     </AuthLink>
                                   </li>
                               </DisplayForLinks>
