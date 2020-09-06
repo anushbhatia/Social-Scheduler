@@ -28,19 +28,16 @@ const AuthLinkWrapper = styled.div`
 `;
 
 const DisplayForLinks = styled.div`
-  display: inline;
   list-style:none;
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  padding: 0 50px;
+  align-items:center;
+  padding: 0 30px 0 60px;
   margin-top: 6px;
-  justify-content: space-around;
+  justify-content: center;
   li{
     margin:10px;
   }
   a{
-      width: 90%;
+    width: 90%;
   }
   @media screen and (max-width: 650px) {
     .col {
@@ -53,6 +50,8 @@ const DisplayForLinks = styled.div`
 const AuthLink = styled.a`
   background-color:${props => props.bgColor} ;
   color: ${props => props.color};
+  display:flex;
+  justify-content:center;
   &:hover{
     background-color:${props => props.hoverBgColor};
     color:${props => props.hoverColor};
@@ -61,9 +60,14 @@ const AuthLink = styled.a`
     color:${props => props.IconColor};
     padding-right:${props => props.paddingRight};
     background-color:${props => props.IconBgColor};
+    flex-basis:25px;
+    align-self:center;
   }
   i &:hover{ 
     color:${props => props.hoverIconColor};
+  }
+  span{
+    flex-basis:160px;
   }
 `;
 
@@ -71,7 +75,6 @@ const Image = styled.img`
   width:100%;
   height:100%;
 `;
-
 
 const Signin = () => {
     //const [status, setStatus] = useState("");
@@ -221,7 +224,7 @@ const Signin = () => {
                                       hoverBgColor="#203797" className="btn"
                                       paddingRight="5px"
                                     >
-                                      <i className="fa fa-facebook fa-fw"></i>Signin with Facebook
+                                      <i className="fa fa-facebook fa-fw"/><span>Signin with Facebook</span>
                                     </AuthLink>
                                   </li>
                                   <li >
@@ -231,7 +234,7 @@ const Signin = () => {
                                       hoverColor="white"    className=" btn"
                                       paddingRight="5px"
                                     >
-                                      <i className="fa fa-github "></i>Signin with Github
+                                      <i className="fa fa-github "/><span>Signin with Github</span>
                                     </AuthLink>
                                   </li>
                                   <li >
@@ -242,7 +245,7 @@ const Signin = () => {
                                       IconBgColor="#0e76a8"
                                       hoverColor="white" hoverBgColor="#3168E5"
                                     >
-                                      <i className="fa fa-linkedin"></i>Signin with Linkedin
+                                      <i className="fa fa-linkedin"/><span>Signin with Linkedin</span>
                                     </AuthLink >
                                   </li>
                                   <li >
@@ -252,7 +255,7 @@ const Signin = () => {
                                       className=" btn"  paddingRight="5px"
                                       IconColor="white" hoverColor="white"
                                     >
-                                      <i className="fa fa-google "></i>Signin with Google
+                                      <i className="fa fa-google "/><span>Signin with Google</span>
                                     </AuthLink>
                                   </li>
                               </DisplayForLinks>
