@@ -30,14 +30,11 @@ const AuthLinkWrapper = styled.div`
 const DisplayForLinks = styled.div`
   list-style:none;
   align-items:center;
-  padding: 0 30px 0 60px;
+  padding: 0 60px;
   margin-top: 6px;
   justify-content: center;
   li{
     margin:10px;
-  }
-  a{
-    width: 90%;
   }
   @media screen and (max-width: 650px) {
     .col {
@@ -51,6 +48,7 @@ const AuthLink = styled.a`
   background-color:${props => props.bgColor} ;
   color: ${props => props.color};
   display:flex;
+  text-align:left;
   justify-content:center;
   &:hover{
     background-color:${props => props.hoverBgColor};
@@ -62,6 +60,7 @@ const AuthLink = styled.a`
     background-color:${props => props.IconBgColor};
     flex-basis:25px;
     align-self:center;
+    text-align:${props => props.iconTextAlign};
   }
   i &:hover{ 
     color:${props => props.hoverIconColor};
@@ -222,7 +221,7 @@ const Signin = () => {
                                       color ="white" bgColor="#3B5998" 
                                       href="#" hoverColor="white"
                                       hoverBgColor="#203797" className="btn"
-                                      paddingRight="5px"
+                                      paddingRight="5px" iconTextAlign="center"
                                     >
                                       <i className="fa fa-facebook fa-fw"/><span>Signin with Facebook</span>
                                     </AuthLink>
