@@ -50,17 +50,19 @@ const AuthLink = styled.a`
   display:flex;
   text-align:left;
   justify-content:center;
+  padding-left:20px;
   &:hover{
     background-color:${props => props.hoverBgColor};
     color:${props => props.hoverColor};
   }
   i{
     color:${props => props.IconColor};
-    padding-right:${props => props.paddingRight};
+    padding-right:${props => props.iconPaddingRight};
     background-color:${props => props.IconBgColor};
     flex-basis:25px;
     align-self:center;
     text-align:${props => props.iconTextAlign};
+    padding-left:${props => props.iconPaddingLeft};
   }
   i &:hover{ 
     color:${props => props.hoverIconColor};
@@ -221,7 +223,8 @@ const Signin = () => {
                                       color ="white" bgColor="#3B5998" 
                                       href="#" hoverColor="white"
                                       hoverBgColor="#203797" className="btn"
-                                      paddingRight="5px" iconTextAlign="center"
+                                      iconPaddingRight="5px" iconTextAlign="left"
+                                      iconPaddingLeft="2px"
                                     >
                                       <i className="fa fa-facebook fa-fw"/><span>Signin with Facebook</span>
                                     </AuthLink>
@@ -231,7 +234,7 @@ const Signin = () => {
                                       bgColor="#2D2C2C" color="white" 
                                       hoverBgColor="#4A4A4C" href="#" 
                                       hoverColor="white"    className=" btn"
-                                      paddingRight="5px"
+                                      iconPaddingRight="5px"
                                     >
                                       <i className="fa fa-github "/><span>Signin with Github</span>
                                     </AuthLink>
@@ -240,7 +243,7 @@ const Signin = () => {
                                     <AuthLink 
                                       color="white" bgColor="#0e76a8" 
                                       href="#" className=" btn" 
-                                      IconColor="white" paddingRight="5px"
+                                      IconColor="white" iconPaddingRight="5px"
                                       IconBgColor="#0e76a8"
                                       hoverColor="white" hoverBgColor="#3168E5"
                                     >
@@ -251,7 +254,7 @@ const Signin = () => {
                                     <AuthLink 
                                       color="white" bgColor="#DE3D1F"
                                       hoverBgColor="#AB2B11"  href="#" 
-                                      className=" btn"  paddingRight="5px"
+                                      className=" btn"  iconPaddingRight="5px"
                                       IconColor="white" hoverColor="white"
                                     >
                                       <i className="fa fa-google "/><span>Signin with Google</span>
