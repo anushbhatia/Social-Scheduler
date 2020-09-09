@@ -1,0 +1,80 @@
+header {
+    position: relative;
+    text-align: center;
+    height: 350px;
+    background: black;
+    overflow: hidden;
+}
+
+.bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-bg {
+    object-fit: cover;
+    opacity: 0.4;
+    width: 100%;
+}
+
+.heading {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.tag {
+    color: white;
+}
+
+.about-background {
+    background-color: #ebf6f6;
+}
+
+.team-image {
+    width: 95%;
+    height: 95%;
+}
+
+.mobile-view {
+    display: none;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icons:hover {
+    transform: scale(1.5);
+    transition: 0.2s ease-in-out;
+}
+
+/*mobile devices*/
+
+@media (max-width: 767px) {
+    .team-image {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+
+    .laptop-view {
+        display: none;
+    }
+
+    .social-bg {
+        object-fit: cover;
+        opacity: 0.4;
+        width: auto;
+    }
+}
