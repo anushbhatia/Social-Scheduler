@@ -8,6 +8,7 @@ import AboutUs from "./components/About";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Detail from './components/Detail';
+import Signin from './components/Signin'
 import UserRegister from './components/UserRegistration';
 
 
@@ -21,8 +22,8 @@ function App() {
         <Route path="/about" component={AboutUs} />
         <Route path="/contact" component={Contact} />
         <Route path="/detail" component={Detail} />
+        <Route path="/signin" component={Signin} />
         <Route path="/register" component={UserRegister} />
-
         <Route component={Default} />
       </Switch>
       <Footer/>
