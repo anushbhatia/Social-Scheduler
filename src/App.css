@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Inconsolata:wght@300&family=Kumbh+Sans:wght@300&family=Source+Code+Pro:wght@300&display=swap');
 
 .contact-label {
     font-family: "Karla", sans-serif;
@@ -21,4 +22,74 @@
     text-decoration-line: underline;
     text-underline-position: under;
     text-decoration-color: rgb(1, 88, 251);
+}
+
+.card-row {
+    margin: 20px;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.cards {
+    width : 20%;
+    background: #fff;
+    margin-bottom : 50px;
+    transition : 0.3s;
+    margin: 20px 5px 20px 5px;
+    
+    border-radius: 10px;
+    padding: 6px
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px;
+}
+
+@media screen and (max-width : 1000px)
+{
+    .cards {
+        width : 40%;
+    }
+}
+  
+
+@media screen and (max-width : 500px)
+{
+    
+    .cards {
+        width : 100%;
+    }
+}
+
+.card-description {
+    max-height : 0px;
+    overflow-y: hidden;
+    font-family: "Kumbh Sans", sans-serif;
+    letter-spacing: 1px;
+    transition : all 0.1s ease-in-out;
+}
+
+.card-button {
+    height : 40px;
+    width : 40px;
+    padding-right: 40px;
+    transition : all 0.2s ease;
+}
+
+.card-heading {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.card-location {
+    font-family : "Grandstander", cursive;
+    letter-spacing: 1px;
+}
+
+.card-title{
+    font-family: "Inconsolata", monospace;
+    font-weight: 650;
+    letter-spacing: 1px;
 }

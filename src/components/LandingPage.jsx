@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import SocialCards from "./SocialCard";
 
 function LandingPage() {
     return (
@@ -8,6 +9,9 @@ function LandingPage() {
                 <h1 className="text-center">
                     Social Scheduler
                 </h1>
+                
+                <SocialCards />
+                
             </Wrapper>
         </>
     )
