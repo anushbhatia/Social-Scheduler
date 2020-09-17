@@ -15,6 +15,7 @@
 - [ ] I have read the project guidelines.
 - [ ] I have checked all the existing projects, before submitting a new project issue.
 - [ ] I have checked previous issues to avoid duplicates.
+- [ ] I have added screenshots in case of bugs/feature updates.
 - [ ] This issue will be meaningful for the project.
 
 ### In case of bugs

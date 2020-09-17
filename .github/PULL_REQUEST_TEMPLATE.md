@@ -13,6 +13,8 @@ Choosing one or more options from the following as per the nature of your Pull r
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Documentation Update
+- [ ] Frontend
+- [ ] Backend
 
 ## Checklist
 
