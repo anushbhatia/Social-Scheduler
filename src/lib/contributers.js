@@ -44,7 +44,7 @@ const useContributerData = (props) => {
   // return [data, err]
   if (data.length === 0) return null;
   return data.map((el) => {
-    return <Card image={el.avatar} name={el.username} key={el.id} />;
+    return <Card image={el.avatar} name={el.username} profileurl={el.profile} key={el.id} />;
   });
 };
 
