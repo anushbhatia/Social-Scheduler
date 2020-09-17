@@ -23,3 +23,5 @@
 - [ ] I have added screenshots of the bug.
 - [ ] I have added steps to reproduce the bug.
 - [ ] I have proposed a possible solution for the bug.
+
+### Screenshots
