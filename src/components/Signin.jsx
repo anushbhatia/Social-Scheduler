@@ -162,7 +162,7 @@ const Signin = () => {
                                     name="password"
                                     value={password}
                                     onChange={e => onChange(e)}
-                                    placeholder="Enter Your Password here."
+                                    placeholder="Enter your password here."
                                     required
                                 />
                             </div>
