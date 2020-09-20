@@ -10,12 +10,12 @@ We want to make contributing to this project as easy and transparent as possible
 
 <h2 align="center"><b> Steps </b></h2> 
 
-**1.**  Fork [this](https://github.com/smaranjitghose/awesome-portfolio-websites.git) repository.
+**1.**  Fork [this](https://github.com/anushbhatia/Social-Scheduler.git) repository.
 
 **2.**  Clone the forked repository.
 
 ```
-git clone --depth 1 https://github.com/<your_user_name>/wesome-portfolio-websites.git
+git clone --depth 1 https://github.com/<your_user_name>/Social-Scheduler.git
 ```
 
    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5N0HJ9db7jSvcL4dsDscZQBzqQqqKVs0BnO1OVz26glLWKJRY&usqp=CAU" width="300">
@@ -23,13 +23,13 @@ git clone --depth 1 https://github.com/<your_user_name>/wesome-portfolio-website
 **3.** Navigate to the project directory.
 
 ```
-cd girlscript_chennai_website
+cd Social-Scheduler
 ```
 
 **4.** Add a reference to the original repository.
 
 ```
-git remote add upstream https://github.com/smaranjitghose/wesome-portfolio-websites.git
+git remote add upstream https://github.com/anushbhatia/Social-Scheduler.git
 ```
 
 **5.** See changes using
@@ -80,7 +80,7 @@ git push -u origin <your_branch_name>
    <img src="https://user-images.githubusercontent.com/41269164/70219836-8d6ea680-176b-11ea-81d5-549093bf0954.png" width=600>
 
 
-**Congratulations!** Sit and relax, you've made your contribution to [Awesome Portfolio Websites](https://github.com/smaranjitghose/awesome-portfolio-websites) project.
+**Congratulations!** Sit and relax, you've made your contribution to [Social-Scheduler](https://github.com/anushbhatia/Social-Scheduler.git) project.
 
 
 
