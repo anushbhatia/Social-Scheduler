@@ -162,7 +162,7 @@ const Signin = () => {
                                     name="password"
                                     value={password}
                                     onChange={e => onChange(e)}
-                                    placeholder="Write the subject of the mail here."
+                                    placeholder="Enter Your Password here."
                                     required
                                 />
                             </div>
