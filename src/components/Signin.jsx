@@ -112,7 +112,7 @@ const Signin = () => {
     }
   return (
     <div>
-      <h1 className="text-center">Signin</h1>
+      <h1 className="text-center">Sign in</h1>
       <Content
                 className="container-fluid rounded shadow-lg py-4 px-3 mt-5"
             >
@@ -191,7 +191,7 @@ const Signin = () => {
                                 className="btn btn-outline-success rounded-pill shadow"
                                 width="30%"
                               >
-                                SignIn
+                                Sign In
                               </Button>
                               <Button
                                 type="submit"
@@ -209,7 +209,7 @@ const Signin = () => {
                                 className="btn btn-outline-success rounded-pill shadow"
                                 width="30%"
                               >
-                                SignUp
+                                Sign Up
                               </Button>
                             </div>
                             {/* social media links for login */}
@@ -226,7 +226,7 @@ const Signin = () => {
                                       iconPaddingRight="5px" iconTextAlign="left"
                                       iconPaddingLeft="2px"
                                     >
-                                      <i className="fa fa-facebook fa-fw"/><span>Signin with Facebook</span>
+                                      <i className="fa fa-facebook fa-fw"/><span>Sign in with Facebook</span>
                                     </AuthLink>
                                   </li>
                                   <li >
@@ -236,7 +236,7 @@ const Signin = () => {
                                       hoverColor="white"    className=" btn"
                                       iconPaddingRight="5px"
                                     >
-                                      <i className="fa fa-github "/><span>Signin with Github</span>
+                                      <i className="fa fa-github "/><span>Sign in with Github</span>
                                     </AuthLink>
                                   </li>
                                   <li >
@@ -247,7 +247,7 @@ const Signin = () => {
                                       IconBgColor="#0e76a8"
                                       hoverColor="white" hoverBgColor="#3168E5"
                                     >
-                                      <i className="fa fa-linkedin"/><span>Signin with Linkedin</span>
+                                      <i className="fa fa-linkedin"/><span>Sign in with Linkedin</span>
                                     </AuthLink >
                                   </li>
                                   <li >
@@ -257,7 +257,7 @@ const Signin = () => {
                                       className=" btn"  iconPaddingRight="5px"
                                       IconColor="white" hoverColor="white"
                                     >
-                                      <i className="fa fa-google "/><span>Signin with Google</span>
+                                      <i className="fa fa-google "/><span>Sign in with Google</span>
                                     </AuthLink>
                                   </li>
                               </DisplayForLinks>
