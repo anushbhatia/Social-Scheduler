@@ -1,8 +1,7 @@
 import React from 'react';
 
-const Card = (props) => {
-  const { image, name, profileurl } = props;
-  return (
+const CardItem = ({ image, name, profileurl }) =>
+	(
     <div className="col-sm-12 col-md-4 margin">
       <a className="card-url" href={profileurl} target="_blank">
         <div className="card text-center">
@@ -13,7 +12,5 @@ const Card = (props) => {
         </div>
       </a>
     </div>
-  );
-};
-
-export default Card;
+	)
+export default CardItem;

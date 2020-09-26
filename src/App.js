@@ -7,11 +7,9 @@ import Contact from './components/Contact';
 import AboutUs from "./components/About";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Detail from './components/Detail';
 import Signin from './components/Signin'
 import UserRegister from './components/UserRegistration';
-
-
+import {default as Contributors} from './components/pages/Contributor/Cards';
 
 function App() {
   return(
@@ -21,7 +19,7 @@ function App() {
         <Route exact path="/" component={LandingPage} />        
         <Route path="/about" component={AboutUs} />
         <Route path="/contact" component={Contact} />
-        <Route path="/detail" component={Detail} />
+        <Route path="/detail" component={Contributors} />
         <Route path="/signin" component={Signin} />
         <Route path="/register" component={UserRegister} />
         <Route component={Default} />
