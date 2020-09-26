@@ -1,5 +1,5 @@
 import React from "react";
-import Error from "./404-Page/Page_404";
+import Error from "./pages/404-Page/Page_404";
 
 function Default() {
   return (
