@@ -30,7 +30,7 @@ const Cards = () => {
 						}
 						</div>
 					</div>
-					<div class="container topmargin maintainers" id="mentor">
+					<div className="container topmargin maintainers" id="mentor">
 						<h2>Mentors</h2>
 						<div className="contain">
 						{

@@ -3,7 +3,7 @@ import adminList from '../data/adminList';
 import mentorList from '../data/mentorList';
 
 const contributorData = async () => {
-	const URL = 'https://api.github.com/repos/anushbhatia/Social-Scheduler/stats/contributors';
+	const URL = 'https://api.github.com/repos/anushbhatia/Social-Scheduler/contributors';
 	return new Promise(async (resolve,reject) => {
 		let res = await Axios({
 			method: 'GET',
@@ -14,10 +14,10 @@ const contributorData = async () => {
 		}
 		let contributors = [], mentors = [], admins = [];
 		res.data.map((el) => {
-			const { id, login, avatar_url, html_url } = el.author;
+			const { id, login, avatar_url, html_url } = el;
 			if (adminList.includes(login)) {
 				admins.push({
-					id: id,
+					id,
 					username: login,
 					avatar: avatar_url,
 					profile: html_url,
@@ -25,7 +25,7 @@ const contributorData = async () => {
 			}
 			else if (mentorList.includes(login)) {
 				mentors.push({
-					id: id,
+					id,
 					username: login,
 					avatar: avatar_url,
 					profile: html_url,
@@ -33,13 +33,14 @@ const contributorData = async () => {
 			}
 			else {
 				contributors.push({
-					id: id,
+					id,
 					username: login,
 					avatar: avatar_url,
 					profile: html_url,
 				});
 			}
 		});
+		console.log(res.data);
 		resolve({
 			contributors,
 			mentors,

@@ -5,8 +5,8 @@ import LandingPage from './components/LandingPage';
 import Default from './components/Default';
 import Contact from './components/Contact';
 import AboutUs from "./components/About";
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
 import Signin from './components/Signin'
 import UserRegister from './components/UserRegistration';
 import {default as Contributors} from './components/pages/Contributor/Cards';
