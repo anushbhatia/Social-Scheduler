@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Caveat&display=swap');
 
 .contact-label {
-    font-family: "Karla", sans-serif;
-    letter-spacing: 1px
+	font-family: 'Karla', sans-serif;
+	letter-spacing: 1px;
 }
 
-::placeholder{
-    font-family: "Karla", sans-serif;
-    letter-spacing: 1px;
+::placeholder {
+	font-family: 'Karla', sans-serif;
+	letter-spacing: 1px;
 }
 
 .nav-link {
-    width: 120px !important;
+	width: 120px !important;
 }
 
 .navbar-brand {
-    font-family: "Caveat", cursive;
-    font-size: 30px;
-    letter-spacing: 1px;
-    text-decoration-line: underline;
-    text-underline-position: under;
-    text-decoration-color: rgb(1, 88, 251);
+	font-family: 'Caveat', cursive;
+	font-size: 30px;
+	letter-spacing: 1px;
+	text-decoration-line: underline;
+	text-underline-position: under;
+	text-decoration-color: rgb(1, 88, 251);
 }
-.color-wt{
+.color-wt {
 	color: white;
 }
