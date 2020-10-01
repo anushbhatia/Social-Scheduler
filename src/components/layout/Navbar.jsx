@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { FaPaperPlane } from "react-icons/fa";
 
 
-
 const Navbar = () => {
 
 
@@ -41,7 +40,7 @@ const Navbar = () => {
               {
                 Navlinks.map((i) => [
                     /*--------For large screen---------- */
-                    <NavLink key={i.name} exact className="d-none d-lg-block nav-link btn btn-info mx-2" to={i.path} style={{color: "white"}}>
+                    <NavLink key={i.name} exact className="d-none d-lg-block nav-link btn mx-2" to={i.path} style={{color: "#000"}}>
                       {i.name}
                     </NavLink>,
 

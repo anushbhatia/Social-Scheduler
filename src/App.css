@@ -10,17 +10,26 @@
     letter-spacing: 1px;
 }
 
+.logo{
+  border-radius: 100%;
+  width: 50px;
+}
+
 .nav-link {
-    width: 120px !important;
+    /* width: 120px !important; */
+    font-size: 18px;
+    letter-spacing: 1;
+    font-family:  "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: rgb(1, 88, 251);
 }
 
 .navbar-brand {
-    font-family: "Caveat", cursive;
-    font-size: 30px;
-    letter-spacing: 1px;
-    text-decoration-line: underline;
-    text-underline-position: under;
-    text-decoration-color: rgb(1, 88, 251);
+    /* font-family: "Caveat", cursive; */
+    font-size: 25px;
+    /* letter-spacing: 1px; */
+    text-decoration: none;
 }
 .color-wt{
 	color: white;
