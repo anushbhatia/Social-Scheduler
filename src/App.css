@@ -59,7 +59,6 @@
   .nav-item:hover::after{
     width:17px;
     transform: scaleX(2);
-    transform: translateX(2);
   }
 }
 
