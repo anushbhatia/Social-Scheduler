@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "../assets/images/temp-logo.jpg";
 
 const Navbar = () => {
 
@@ -13,10 +14,9 @@ const Navbar = () => {
 
     return (
       <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand">
-        <i class="fab fa-stripe-s logo" ></i>
-        {/*For logo: <img class="logo" src="" width="" height="" alt="logo"/> */}
-        Social Scheduler</a>
+      <NavLink to="/" class="navbar-brand">
+        <img src={Logo} className="logo"/>
+        Social Scheduler</NavLink>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -24,7 +24,6 @@ const Navbar = () => {
       <ul class="navbar-nav ml-auto">
       {
         Navlinks.map((i) =>
-            /*--------For large screen---------- */
             <li className="nav-item">
             <NavLink key={i.name} className="nav-link" to={i.path} >
               {i.name}
