@@ -51,7 +51,7 @@
     position: absolute;
     left:40%;
     background-color: #3595a5;
-    margin: 0.5rem auto;
+    margin: 0.1rem auto;
     height: 3px;
     width:0;
     transition: transform 0.4s ease;
