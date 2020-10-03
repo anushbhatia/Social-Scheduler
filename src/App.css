@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .contact-label {
     font-family: "Karla", sans-serif;
@@ -10,18 +10,72 @@
     letter-spacing: 1px;
 }
 
-.nav-link {
-    width: 120px !important;
+/* Header */
+.navbar{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  display: flex;
+  padding: 0.4rem 3rem;
+  align-items: stretch;
 }
 
-.navbar-brand {
-    font-family: "Caveat", cursive;
-    font-size: 30px;
-    letter-spacing: 1px;
-    text-decoration-line: underline;
-    text-underline-position: under;
-    text-decoration-color: rgb(1, 88, 251);
+.logo{
+  margin: auto 0.3rem;
+  border-radius: 100%;
+  width:3rem;
 }
-.color-wt{
-	color: white;
+
+.navbar-brand{
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem;
+  color:#000;
+}
+.nav-item{
+  margin: auto 1.2vw 1rem;
+  font-size: 1.1rem;
+  line-height: 0.8;
+  position: relative;
+}
+
+.nav-link{
+  margin: 0.5rem auto auto;
+  font-family: Verdana, sans-serif;
+}
+
+.dropdown-menu{
+  line-height: 2;
+}
+
+@media screen and (min-width:992px) {
+  .nav-item::after{
+    content:'';
+    position: absolute;
+    left:40%;
+    background-color: #3595a5;
+    margin: 0.1rem auto;
+    height: 3px;
+    width:0;
+    transition: transform 0.4s ease;
+  }
+  .nav-item:hover::after{
+    width:17px;
+    transform: scaleX(2);
+  }
+}
+
+@media screen and (max-width:992px){
+  .navbar{
+    padding: 0.5rem 1rem;
+  }
+  .nav-item{
+    margin: 1rem auto;
+  }
+  .dropdown-menu{
+    border: none;
+  }
+}
+
+@media screen and (max-width:345px){
+  .navbar-brand{
+    font-size: 1.5rem;
+  }
 }

@@ -1,62 +1,50 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FaPaperPlane } from "react-icons/fa";
-
-
+import Logo from "../assets/images/temp-logo.jpg";
 
 const Navbar = () => {
-
 
   /*-------All Nav links goes here------------------ */
   const Navlinks = [
     { name: "Home", path: "/" },
-        { name: "Contact", path: "/contact" },
-        { name: "About", path: "/about" },
-        { name: "Contributors", path: "/detail" },
-        {name:"Signin",path:"/signin"}
-
-
+    { name: "About", path: "/about" },
+    { name: "Contributors", path: "/detail" },
+    { name: "Contact", path: "/contact" }
     ];
 
     return (
-      <nav className="navbar navbar-expand-lg navbar-light shadow mb-3 py-3 bg-white">
-        <div className="container">
-          <NavLink className="display-1 navbar-brand" to="/">
-            <FaPaperPlane className="mx-2" />
-            Social Scheduler
-          </NavLink>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav ml-auto">
-              {
-                Navlinks.map((i) => [
-                    /*--------For large screen---------- */
-                    <NavLink key={i.name} exact className="d-none d-lg-block nav-link btn btn-info mx-2" to={i.path} style={{color: "white"}}>
-                      {i.name}
-                    </NavLink>,
+      <nav class="navbar navbar-expand-lg navbar-light">
+      <NavLink to="/" class="navbar-brand">
+        <img src={Logo} className="logo"/>
+        Social Scheduler</NavLink>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+      {
+        Navlinks.map((i) =>
+            <li className="nav-item">
+            <NavLink key={i.name} className="nav-link" to={i.path} >
+              {i.name}
+            </NavLink>
+            </li>
+      )
+      }
 
-                    /*--------For small screen----------- */
-                    <NavLink key={i+1} exact className="d-lg-none d-xl-none nav-link my-2" to={i.path}>
-                    {i.name}
-                    </NavLink>
-                ])
-              }
-            </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>  Sign In
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <NavLink class="dropdown-item" to="">--</NavLink>
+            <NavLink class="dropdown-item" to="">--</NavLink>
           </div>
-        </div>
-      </nav>
+        </li>
+      </ul>
+    </div>
+  </nav>
     );
 };
-
 
 export default Navbar;
