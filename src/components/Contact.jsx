@@ -18,7 +18,7 @@ function Contact() {
 		setFormData((prevState) => {
 			return {
 				...prevState,
-				[e.target.name]: e.target.value,
+				    [e.target.name]: e.target.value,
 			};
 		});
 	};

@@ -26,7 +26,8 @@
     "start": "react-scripts start",
     "build": "CI= react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,5 +48,16 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "lint-staged": {
+    "*.{ts,js,css,json}": [
+      "./node_modules/.bin/prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "2.1.2"
+  }
 }
