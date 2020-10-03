@@ -31,14 +31,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -57,6 +49,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
     "prettier": "2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
