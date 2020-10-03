@@ -1,6 +1,5 @@
-const WA = require('../helper-function/whatsapp-send-message');
-const sendWhatsappMessage = async (req, res) => {  
-
+const WA = require("../helper-function/whatsapp-send-message");
+const sendWhatsappMessage = async (req, res) => {
   let message = req.body.Body;
   let senderID = req.body.From;
 
@@ -8,8 +7,7 @@ const sendWhatsappMessage = async (req, res) => {
   console.log(senderID);
 
   // Write a function to send message back to WhatsApp
-  await WA.sendMessage('Hello from the other side.', senderID);
-
-}
+  await WA.sendMessage("Hello from the other side.", senderID);
+};
 
 exports.sendWhatsappMessage = sendWhatsappMessage;

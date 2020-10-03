@@ -1,4 +1,1 @@
-export default [
-	'abhu-A-J',
-	'ashishnagpal2498'
-]
+export default ["abhu-A-J", "ashishnagpal2498"];

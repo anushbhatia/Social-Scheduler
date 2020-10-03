@@ -19,7 +19,7 @@ Choosing one or more options from the following as per the nature of your Pull r
 ## Checklist
 
 Please tick all the boxes that are fulfilled by your Pull Request.
-*These checkboxes can be checked like this: `[X]`*
+_These checkboxes can be checked like this: `[X]`_
 
 - [ ] I have named my files and folder, according to this project's guidelines.
 - [ ] My code follows the style guidelines of this project.

@@ -1,5 +1,5 @@
 * {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .contain {
@@ -28,25 +28,25 @@
   justify-content: center;
 }
 
-.card-url, .card-url:hover {
+.card-url,
+.card-url:hover {
   text-decoration: none;
   color: black;
 }
 
 .card-img-top {
   border-radius: 11rem;
-  -webkit-box-shadow: 47px 49px 95px -55px rgba(0,0,0,0.53);
-  -moz-box-shadow: 47px 49px 95px -55px rgba(0,0,0,0.53);
-  box-shadow: 47px 49px 95px -55px rgba(0,0,0,0.53);
+  -webkit-box-shadow: 47px 49px 95px -55px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 47px 49px 95px -55px rgba(0, 0, 0, 0.53);
+  box-shadow: 47px 49px 95px -55px rgba(0, 0, 0, 0.53);
 }
 
 .card-img-top:hover {
-  -webkit-box-shadow: 47px 49px 95px -55px rgba(0,0,0,0.8);
-  -moz-box-shadow: 47px 49px 95px -55px rgba(0,0,0,0.8);
-  box-shadow: 47px 49px 95px -55px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 47px 49px 95px -55px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 47px 49px 95px -55px rgba(0, 0, 0, 0.8);
+  box-shadow: 47px 49px 95px -55px rgba(0, 0, 0, 0.8);
   transition: 0.2s;
 }
-
 
 .card-text {
   font-size: 22px;

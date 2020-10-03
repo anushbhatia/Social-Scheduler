@@ -1,10 +1,10 @@
 # Description
 
-*Please include a summary of the issue.*
+_Please include a summary of the issue._
 
 ## Type of issue
 
-*These checkboxes can be checked like this: `[X]`*
+_These checkboxes can be checked like this: `[X]`_
 
 - [ ] Feature (New Script)
 - [ ] Bug

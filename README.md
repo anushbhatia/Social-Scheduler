@@ -2,8 +2,8 @@
 Social Media is everywhere. Who doesn't use it?. Twitter, Instagram, Facebook, Snapchat have evolved to be the means of modern communication.
 <p align="center"><img src="https://media.giphy.com/media/atZII8NmbPGw0/giphy.gif" width=50%></p>
 
+A project to automatically send invite to all of your social media like LinkedIn, Facebook, email, WhatsApp, Instagram as soon as he finishes filling the form.
 
-A project to automatically send invite to all of your social media like LinkedIn, Facebook, email, WhatsApp, Instagram as soon as he finishes filling the form. 
 <p align="center"><img src="https://media.giphy.com/media/YqcW1kMnm3m9YHAUHc/giphy.gif" width=45%></p>
 
 We can also send deadlines, important meeting announcement. Now no more delays and late candidates on interviews.
@@ -12,16 +12,17 @@ We can also send deadlines, important meeting announcement. Now no more delays a
 
 <h2 align = "center">Skills Required </h2>
 
-- HTML5 
-- CSS 
+- HTML5
+- CSS
 - JavaScript
-- ReactJS 
+- ReactJS
 - Selenium
 - API for Various Social Media
 
 <h2 align= "center"><b>Open Source Programs we have been a part of</b></h2>
 
-<a href = "https://hakincodes.tech/"><h3 align= "center"><b> HakinCodes </b></h3></a> 
+<a href = "https://hakincodes.tech/"><h3 align= "center"><b> HakinCodes </b></h3></a>
+
 <p align="center"><img width=30% src="assets/images/HakinCodes.png"></p>
 
 <h2 align= "center"><b> Project Maintainers</b></h2>
@@ -37,10 +38,12 @@ We can also send deadlines, important meeting announcement. Now no more delays a
 
 [![](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/images/0)](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/links/0)[![](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/images/1)](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/links/1)[![](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/images/2)](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/links/2)[![](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/images/3)](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/links/3)[![](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/images/4)](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/links/4)[![](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/images/5)](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/links/5)[![](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/images/6)](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/links/6)[![](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/images/7)](https://sourcerer.io/fame/smaranjitghose/anushbhatia/Social-Scheduler/links/7)
 
-<a href="./CODE_OF_CONDUCT.md"><h2 align= "center"><b> Code of Conduct</b></h2></a> 
+<a href="./CODE_OF_CONDUCT.md"><h2 align= "center"><b> Code of Conduct</b></h2></a>
+
 <p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
 
-<a href="./LICENSE"><h2 align= "center"><b> License</b></h2></a> 
+<a href="./LICENSE"><h2 align= "center"><b> License</b></h2></a>
+
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
 
 <h2 align = "center"> <b>Made with 💖 for open source</b></h2>
@@ -48,18 +51,22 @@ We can also send deadlines, important meeting announcement. Now no more delays a
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <!--------------------new work------------------------>
-## REQUIREMENTS:-
-### Node.js:- Node.js® is a JavaScript runtime built on <a href="https://v8.dev/">Chrome's V8 JavaScript engine.</a> 
-  
-To install Node.Js :-
- - Installing via package Manager click <a href="https://nodejs.org/en/download/package-manager/">HERE</a>
- - Installing For Different OS virsons click <a href="https://nodejs.org/en/download/">HERE</a> 
 
-## Steps to Run application 
- - Before you start contributing make sure to check our [Contribution Guidelines.](https://github.com/anushbhatia/Social-Scheduler/blob/master/Contribute.MD)
- 
- -  Install all the dependencies for the project using `npm install`
- 
- -  Start the application using `npm start`
- 
- - The application will be served at `localhost:3000`.
+## REQUIREMENTS:-
+
+### Node.js:- Node.js® is a JavaScript runtime built on <a href="https://v8.dev/">Chrome's V8 JavaScript engine.</a>
+
+To install Node.Js :-
+
+- Installing via package Manager click <a href="https://nodejs.org/en/download/package-manager/">HERE</a>
+- Installing For Different OS virsons click <a href="https://nodejs.org/en/download/">HERE</a>
+
+## Steps to Run application
+
+- Before you start contributing make sure to check our [Contribution Guidelines.](https://github.com/anushbhatia/Social-Scheduler/blob/master/Contribute.MD)
+
+- Install all the dependencies for the project using `npm install`
+
+- Start the application using `npm start`
+
+- The application will be served at `localhost:3000`.
