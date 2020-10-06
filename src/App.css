@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .contact-label {
-    font-family: "Karla", sans-serif;
-    letter-spacing: 1px
+	font-family: 'Karla', sans-serif;
+	letter-spacing: 1px;
 }
 
-::placeholder{
-    font-family: "Karla", sans-serif;
-    letter-spacing: 1px;
+::placeholder {
+	font-family: 'Karla', sans-serif;
+	letter-spacing: 1px;
 }
 
 /* Header */

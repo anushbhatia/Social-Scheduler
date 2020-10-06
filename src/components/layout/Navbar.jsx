@@ -3,6 +3,14 @@ import { NavLink } from "react-router-dom";
 import Logo from "../assets/images/temp-logo.jpg";
 
 const Navbar = () => {
+	/*-------All Nav links goes here------------------ */
+	const Navlinks = [
+		{ name: 'Home', path: '/' },
+		{ name: 'Contact', path: '/contact' },
+		{ name: 'About', path: '/about' },
+		{ name: 'Contributors', path: '/detail' },
+		{ name: 'Signin', path: '/signin' },
+	];
 
   /*-------All Nav links goes here------------------ */
   const Navlinks = [
