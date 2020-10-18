@@ -55,7 +55,7 @@ To install Node.js :-
  - Installing For Different Operating System versions click <a href="https://nodejs.org/en/download/">HERE</a> 
 
 ## Steps to Run application 
- - Before you start contributing make sure to check our [Contribution Guidelines.](https://github.com/anushbhatia/Social-Scheduler/blob/master/Contribute.MD)
+ - Before you start contributing make sure to check our [Contribution Guidelines.](https://github.com/anushbhatia/Social-Scheduler/blob/master/contribute.md)
  
  -  Install all the dependencies for the project using `npm install`
  
