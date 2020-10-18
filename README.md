@@ -21,7 +21,7 @@ We can also send deadlines, important meeting announcement. Now no more delays a
 <h2 align= "center"><b>Open Source Programs we have been a part of</b></h2>
 
 <a href = "https://hakincodes.tech/"><h3 align= "center"><b> HakinCodes </b></h3></a> 
-<p align="center"><img width=30% src="assets/images/HakinCodes.png"></p>
+<p align="center"><img width=30% src="assets/logo.jpg"></p>
 
 <h2 align= "center"><b> Project Maintainers</b></h2>
 
