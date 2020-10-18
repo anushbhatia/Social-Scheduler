@@ -1,9 +1,9 @@
-<p align="center"><img width=50% src="assets/Images/Docs/contribution.png"></p>
+
 
 <h1 align="center"><b> Contributing Guidelines </b></h3> 
 
 
-We value all the people who are interested in contributing to Girlscript website boilerplate. This is required to create a unified development environment. These are mostly guidelines, not rules. Use your best judgement, and feel free to propose changes to this document in a pull request.
+We value all the people who are interested in contributing to Social scheduler . This is required to create a unified development environment. These are mostly guidelines, not rules. Use your best judgement, and feel free to propose changes to this document in a pull request.
 
 We want your contributions to this project to be as easy and transparent as possible, whether it's:
 * Reporting a bug
@@ -12,12 +12,12 @@ We want your contributions to this project to be as easy and transparent as poss
 
 <h2 align="center"><b> Steps </b></h2> 
 
-**1.**  Fork [this](https://github.com/smaranjitghose/girlscript_chennai_website.git) repository.
+**1.**  Fork [this](https://github.com/anushbhatia/Social-Scheduler.git) repository.
 
 **2.**  Clone the forked repository.
 
 ```
-git clone --depth 1 https://github.com/<your_user_name>/girlscript_chennai_website.git
+git clone --depth 1 https://github.com/<your_user_name>/Social-Scheduler.git
 ```
 
    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5N0HJ9db7jSvcL4dsDscZQBzqQqqKVs0BnO1OVz26glLWKJRY&usqp=CAU" width="300">
@@ -25,13 +25,13 @@ git clone --depth 1 https://github.com/<your_user_name>/girlscript_chennai_websi
 **3.** Navigate to the project directory.
 
 ```
-cd girlscript_chennai_website
+cd Social-Scheduler
 ```
 
 **4.** Add a reference to the original repository.
 
 ```
-git remote add upstream https://github.com/smaranjitghose/girlscript_chennai_website.git
+git remote add upstream https://github.com/anushbhatia/Social-Scheduler.git
 ```
 
 **5.** See changes using
@@ -82,7 +82,7 @@ git push -u origin <your_branch_name>
    <img src="https://user-images.githubusercontent.com/41269164/70219836-8d6ea680-176b-11ea-81d5-549093bf0954.png" width=600>
 
 
-**Congratulations!** Sit and relax, you've made your contribution to [GirlScript Website Boilerplate](https://github.com/smaranjitghose/girlscript_chennai_website) project.
+**Congratulations!** Sit and relax, you've made your contribution to [Social Scheduler](https://github.com/anushbhatia/Social-Scheduler/) project.
 
 
 <h2 align="center"><b>Grading for Contributions </b></h2>
@@ -97,7 +97,7 @@ You will get the following points on the basis of difficulty of the project.
 | Hard     | 10 |
 
 
-<p align="center"><img width=50% src="assets/Images/Docs/Contributing.png"></p>
+
 
 ***
 
