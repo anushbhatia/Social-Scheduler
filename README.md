@@ -21,7 +21,7 @@ We can also send deadlines, important meeting announcement. Now no more delays a
 <h2 align= "center"><b>Open Source Programs we have been a part of</b></h2>
 
 <a href = "https://hakincodes.tech/"><h3 align= "center"><b> HakinCodes </b></h3></a> 
-<p align="center"><img width=30% src="assets/images/HakinCodes.png"></p>
+<p align="center"><img width=30% src="logo.jpg"></p>
 
 <h2 align= "center"><b> Project Maintainers</b></h2>
 
@@ -50,9 +50,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## REQUIREMENTS:-
 ### Node.js:- Node.js® is a JavaScript runtime built on <a href="https://v8.dev/">Chrome's V8 JavaScript engine.</a> 
   
-To install Node.Js :-
+To install Node.js :-
  - Installing via package Manager click <a href="https://nodejs.org/en/download/package-manager/">HERE</a>
- - Installing For Different OS virsons click <a href="https://nodejs.org/en/download/">HERE</a> 
+ - Installing For Different Operating System versions click <a href="https://nodejs.org/en/download/">HERE</a> 
 
 ## Steps to Run application 
  - Before you start contributing make sure to check our [Contribution Guidelines.](https://github.com/anushbhatia/Social-Scheduler/blob/master/Contribute.MD)
