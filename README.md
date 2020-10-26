@@ -44,4 +44,4 @@ We can also send deadlines, important meeting announcement. Now no more delays a
 
 <h2 align = "center"> <b>Made with 💖 for open source</b></h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html).
