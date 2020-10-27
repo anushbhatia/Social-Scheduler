@@ -6,19 +6,11 @@ const Navbar = () => {
 	/*-------All Nav links goes here------------------ */
 	const Navlinks = [
 		{ name: 'Home', path: '/' },
-		{ name: 'Contact', path: '/contact' },
 		{ name: 'About', path: '/about' },
 		{ name: 'Contributors', path: '/detail' },
-		{ name: 'Signin', path: '/signin' },
+		{ name: 'Contact', path: '/contact' },
+		{ name: 'Signin', path: '/signin' }
 	];
-
-  /*-------All Nav links goes here------------------ */
-  const Navlinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Contributors", path: "/detail" },
-    { name: "Contact", path: "/contact" }
-    ];
 
     return (
       <nav class="navbar navbar-expand-lg navbar-light">
