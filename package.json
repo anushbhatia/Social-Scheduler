@@ -8,7 +8,7 @@
 		"@testing-library/react": "^9.5.0",
 		"@testing-library/user-event": "^7.2.1",
 		"anymatch": "^3.1.1",
-		"axios": "^0.21.1",
+		"axios": "^0.21.2",
 		"bootstrap": "^4.5.2",
 		"emailjs-com": "^2.6.3",
 		"eslint-plugin-import": "^2.22.0",
