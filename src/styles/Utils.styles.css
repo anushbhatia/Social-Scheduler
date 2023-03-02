@@ -1,0 +1,66 @@
+/* Typography */
+
+.custom-block-title {
+  @apply text-white text-3xl font-bold tracking-normal;
+}
+.custom-block-big-title {
+  @apply text-white text-4xl xl:text-5xl font-bold tracking-normal;
+}
+.custom-block-subtitle {
+  @apply text-xs text-customSecondary  tracking-wider font-bold uppercase;
+}
+.custom-content-title {
+  @apply text-white text-lg font-bold tracking-normal;
+}
+.custom-content-text-white {
+  @apply text-white text-base leading-relaxed
+}
+.custom-content-text-gray {
+  @apply text-gray-400 text-base
+}
+
+/* Backgrounds */
+
+.custom-bg-dark1 {
+  @apply bg-customDarkBg1  fill-customDarkBg1
+}
+.custom-bg-dark2 {
+  @apply bg-customDarkBg2  fill-customDarkBg2
+}
+.custom-bg-dark3 {
+  @apply bg-customDarkBg3  fill-customDarkBg3
+}
+body, html {
+  @apply bg-customDarkBg2
+}
+
+/* Borders */
+
+.custom-border-gray {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255, 0.15);  
+}
+.custom-border-gray-darker {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255, 0.07);
+
+}
+.custom-border-gray-nobottom {
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  border-color: rgb(255, 255, 255, 0.1);
+  border-radius: "10px";
+}
+
+/* Buttons */
+
+.custom-button-colored {
+ @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7765e6] cursor-pointer transition
+}
+
+/* Preventing FOUC */
+@font-face {
+  font-display: var(--fontsource-Inter-font-display, optional);
+}
