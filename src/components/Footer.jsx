@@ -15,7 +15,7 @@ export const Footer = () => {
                   <TailcastLogo />
                 </div>
                 <div className="text-white font-['Inter'] font-bold text-xl">
-                  Tailcast
+                  Social Scheduler
                 </div>
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
@@ -142,7 +142,7 @@ export const Footer = () => {
             </div>
           </div>
           <p className="lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden lg:block">
-            &copy; 2022. MIT license.
+            &copy; 2022 Smaranjit Ghose and Anush Bhatia
           </p>
         </div>
       </div>

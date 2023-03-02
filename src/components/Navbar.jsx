@@ -25,7 +25,7 @@ export const Navbar = () => {
                 <TailcastLogo />
               </div>
               <div className="text-white font-['Inter'] font-bold text-xl">
-                Tailcast
+                Social Scheduler
               </div>
             </div>
           </a>
